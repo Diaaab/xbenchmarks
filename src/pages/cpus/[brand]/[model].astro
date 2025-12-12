@@ -1,0 +1,176 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import cpus from "../../../data/cpus.json";
+import laptops from "../../../data/laptops.json";
+import { getBrand, slugify } from "../../../utils/data-helpers";
+
+export async function getStaticPaths() {
+    return cpus.map((cpu) => {
+        const brand = getBrand(cpu.name);
+        const modelSlug = cpu.slug || slugify(cpu.name);
+        return {
+            params: {
+                brand: slugify(brand),
+                model: modelSlug,
+            },
+            props: { cpu },
+        };
+    });
+}
+
+const { cpu } = Astro.props;
+
+// Linked Laptops Logic
+// Fuzzy match: check if laptop spec CPU string includes this cpu name
+const linkedLaptops = laptops
+    .filter((laptop) => {
+        return laptop.specs.CPU && laptop.specs.CPU.includes(cpu.name);
+    })
+    .slice(0, 10); // Limit to 10
+
+// Common Uses Logic
+const commonUses = [];
+const cores = parseInt(cpu.specs["Total Cores"] || cpu.specs["Cores"] || "0");
+const score = parseInt(cpu.scores["NanoReview Final Score"] || "0");
+
+if (score > 70) commonUses.push("High-End Gaming", "3D Rendering");
+else if (score > 50) commonUses.push("Casual Gaming", "Photo Editing");
+else commonUses.push("Office Work", "Web Browsing");
+
+if (cores >= 10) commonUses.push("Heavy Multitasking");
+if (cpu.name.includes("HX") || cpu.name.includes("HK"))
+    commonUses.push("Workstation Performance");
+if (cpu.name.includes("U ") || cpu.name.endsWith("U"))
+    commonUses.push("Portable / Battery Efficient");
+---
+
+<Layout title={`${cpu.name} Benchmark & Specs`}>
+    <div class="profile-header grid">
+        <div class="profile-summary">
+            <h1>{cpu.name}</h1>
+            <div class="tags flex gap-2">
+                {commonUses.map((use) => <span class="tag">{use}</span>)}
+            </div>
+
+            <div class="score-grid">
+                {
+                    cpu.scores &&
+                        Object.entries(cpu.scores)
+                            .slice(0, 6)
+                            .map(([key, value]) => (
+                                <div class="score-item">
+                                    <span class="score-label">{key}</span>
+                                    <span class="score-value">{value}</span>
+                                </div>
+                            ))
+                }
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <h2>Specifications</h2>
+        <table class="data-table">
+            <tbody>
+                {
+                    cpu.specs &&
+                        Object.entries(cpu.specs).map(([key, value]) => (
+                            <tr>
+                                <th>{key}</th>
+                                <td>{value}</td>
+                            </tr>
+                        ))
+                }
+            </tbody>
+        </table>
+    </section>
+
+    {
+        linkedLaptops.length > 0 && (
+            <section class="section">
+                <h2>Laptops with {cpu.name}</h2>
+                <div
+                    class="grid"
+                    style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));"
+                >
+                    {linkedLaptops.map((l) => {
+                        const b = getBrand(l.name);
+                        const s = l.slug || slugify(l.name);
+                        // We need to resolve the series to build the full URL
+                        // Importing getSeries requires using it.
+                        // To be safe, we can try to construct it or just link to the Brand page? NO, link to profile.
+                        // We need the series.
+                        const series = l.name.split(" ")[1] || "Other"; // Simple heuristic duplicate from helper
+                        return (
+                            <a
+                                href={`/laptop-brands/${slugify(b)}/${slugify(series)}/${s}`}
+                                class="laptop-link"
+                            >
+                                {l.name}
+                            </a>
+                        );
+                    })}
+                </div>
+            </section>
+        )
+    }
+</Layout>
+
+<style>
+    .profile-summary h1 {
+        margin-top: 0;
+    }
+
+    .tags {
+        flex-wrap: wrap;
+        margin-bottom: var(--space-4);
+    }
+
+    .tag {
+        font-size: var(--text-xs);
+        border: 1px solid var(--color-text);
+        padding: 2px 8px;
+        border-radius: 99px;
+        text-transform: uppercase;
+    }
+
+    .score-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: var(--space-2);
+        margin-top: var(--space-4);
+    }
+
+    .score-item {
+        border: var(--border-primary);
+        padding: var(--space-2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .score-value {
+        font-size: var(--text-xl);
+        font-weight: 700;
+    }
+
+    .score-label {
+        font-size: var(--text-xs);
+        color: var(--color-text-muted);
+        text-transform: uppercase;
+    }
+
+    .laptop-link {
+        display: block;
+        padding: var(--space-3);
+        border: var(--border-primary);
+        text-decoration: none;
+        color: var(--color-text);
+        font-size: var(--text-sm);
+    }
+
+    .laptop-link:hover {
+        background-color: var(--color-surface);
+    }
+</style>

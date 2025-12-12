@@ -1,0 +1,616 @@
+---
+import Layout from "../../../../layouts/Layout.astro";
+import laptops from "../../../../data/laptops.json";
+import cpus from "../../../../data/cpus.json";
+import gpus from "../../../../data/gpus.json";
+import { getBrand, getSeries, slugify } from "../../../../utils/data-helpers";
+import {
+    parseRAM,
+    parseStorage,
+    parseDisplay,
+    parseCPU,
+    parseGPU,
+} from "../../../../utils/data-parser";
+
+export async function getStaticPaths() {
+    return laptops.map((laptop) => {
+        const brand = getBrand(laptop.name);
+        const series = getSeries(laptop.name);
+        const modelSlug = laptop.slug || slugify(laptop.name);
+
+        return {
+            params: {
+                brand: slugify(brand),
+                series: slugify(series),
+                model: modelSlug,
+            },
+            props: { laptop },
+        };
+    });
+}
+
+const { laptop } = Astro.props;
+const brand = getBrand(laptop.name);
+const series = getSeries(laptop.name);
+
+// --- Cross-Linking Logic ---
+// 1. More from same Series (random 6)
+const sameSeries = laptops
+    .filter(
+        (l) =>
+            getBrand(l.name) === brand &&
+            getSeries(l.name) === series &&
+            l.id !== laptop.id,
+    )
+    .sort(() => 0.5 - Math.random()) // Shuffle
+    .slice(0, 6);
+
+// 2. Alternatives (Same price range +/- 20%, different brand) (random 6)
+// If price is missing, just random different brand
+const priceVal = parseFloat(laptop.price);
+const alternatives = laptops
+    .filter((l) => {
+        if (l.id === laptop.id) return false;
+        if (getBrand(l.name) === brand) return false; // Different brand
+        if (priceVal && l.price) {
+            const p = parseFloat(l.price);
+            return p >= priceVal * 0.8 && p <= priceVal * 1.2;
+        }
+        return true; // Fallback if no price
+    })
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 6);
+
+// --- Data Parsing Helpers ---
+function getParsedSpecs(key, value) {
+    if (!value) return [];
+    if (key === "RAM") return parseRAM(value);
+    if (key === "Storage") return parseStorage(value);
+    if (key === "Display") return parseDisplay(value);
+    if (key === "CPU") return parseCPU(value);
+    if (key === "GPU") return parseGPU(value);
+    // Fallback for others (split by newline if clean)
+    return value
+        .replace(/^- \s+/, "")
+        .split("\n")
+        .map((s) => s.trim())
+        .filter(Boolean);
+}
+
+// Internal Link Generator for CPU/GPU
+function getLinkForHardware(type, name) {
+    // type: 'cpus' or 'gpus'
+    // name: GPU/CPU name from laptop specs (may include extra info like "8GB", "Mobile" vs "Laptop")
+
+    // Import the databases
+    const cpusData = type === "cpus" ? cpus : null;
+    const gpusData = type === "gpus" ? gpus : null;
+    const database = type === "cpus" ? cpusData : gpusData;
+
+    if (!database) return `/${type}`;
+
+    // Clean the name for matching
+    const cleanName = name
+        .replace(/\s+\d+GB/gi, "") // Remove memory size like "8GB"
+        .replace(/Mobile/gi, "Laptop") // Normalize Mobile -> Laptop
+        .trim();
+
+    // Try exact match first
+    let match = database.find((item) => item.name === cleanName);
+
+    // If no exact match, try fuzzy matching
+    if (!match) {
+        // Remove common suffixes and try again
+        const baseName = cleanName
+            .replace(/\s+Laptop$/i, "")
+            .replace(/\s+Desktop$/i, "")
+            .replace(/\s+\(.*?\)$/g, "") // Remove parenthetical info
+            .trim();
+
+        match = database.find((item) => {
+            const itemBase = item.name
+                .replace(/\s+Laptop$/i, "")
+                .replace(/\s+Desktop$/i, "")
+                .replace(/\s+\(.*?\)$/g, "")
+                .trim();
+            return itemBase === baseName || item.name.includes(baseName);
+        });
+    }
+
+    // If we found a match, generate the proper URL
+    if (match) {
+        const brand = getBrand(match.name);
+        const series = getSeries(match.name);
+        const modelSlug = match.slug || slugify(match.name);
+        return `/${type}/${slugify(brand)}/${slugify(series)}/${modelSlug}`;
+    }
+
+    // Fallback: return to the type index
+    return `/${type}`;
+}
+
+const specSections = [
+    {
+        title: "Display",
+        keys: [
+            "Display",
+            "Resolution",
+            "Refresh rate",
+            "PPI",
+            "Aspect ratio",
+            "Touchscreen",
+            "Coating",
+            "Panel Type",
+        ],
+    },
+    {
+        title: "Performance",
+        keys: ["CPU", "GPU", "RAM", "Storage", "Cooling system"],
+    },
+    {
+        title: "Design",
+        keys: [
+            "Weight",
+            "Dimensions",
+            "Material",
+            "Colors",
+            "Transformer",
+            "Opening angle",
+        ],
+    },
+    {
+        title: "Connectivity",
+        keys: [
+            "Wi-Fi standard",
+            "Bluetooth",
+            "USB-A",
+            "USB Type-C",
+            "Thunderbolt",
+            "HDMI",
+            "Audio jack (3.5 mm)",
+            "SD card reader",
+        ],
+    },
+    {
+        title: "Battery",
+        keys: [
+            "Battery type",
+            "Capacity",
+            "Full charging time",
+            "Fast charging",
+            "Charging via USB (Power Delivery)",
+        ],
+    },
+    {
+        title: "Features",
+        keys: [
+            "Webcam",
+            "Speakers",
+            "Microphones",
+            "Fingerprint",
+            "Infrared sensor",
+            "Keyboard type",
+            "Backlight",
+            "Numpad",
+        ],
+    },
+];
+
+// Helper to find spec value regardless of strict casing or extra keys
+function findSpec(key) {
+    // Search in laptop.specs
+    // Exact match
+    if (laptop.specs[key]) return laptop.specs[key];
+    // Case insensitive?
+    // Partial?
+    return null;
+}
+---
+
+<Layout
+    title={`${laptop.name} Specs, Price & Review`}
+    description={`Full specifications and review for ${laptop.name}.`}
+>
+    <!-- Hero / Header -->
+    <div class="profile-header grid">
+        <div class="profile-image">
+            {
+                laptop.images?.main ? (
+                    <img src={laptop.images.main} alt={laptop.name} />
+                ) : (
+                    <div class="placeholder-img">No Image</div>
+                )
+            }
+        </div>
+
+        <div class="profile-meta">
+            <h1 class="profile-title">{laptop.name}</h1>
+
+            {laptop.price && <div class="price-tag mb-4">${laptop.price}</div>}
+
+            <div class="score-grid">
+                {
+                    laptop.scores &&
+                        Object.entries(laptop.scores)
+                            .slice(0, 6)
+                            .map(([key, value]) => (
+                                <div class="score-card">
+                                    <span class="score-val">{value}</span>
+                                    <span class="score-label">{key}</span>
+                                </div>
+                            ))
+                }
+            </div>
+
+            <div class="brand-links mb-6">
+                <span class="text-muted">Brand: </span>
+                <a href={`/laptop-brands/${slugify(brand)}`} class="link"
+                    >{brand}</a
+                >
+                <span class="mx-2">/</span>
+                <span class="text-muted">Series: </span>
+                <a
+                    href={`/laptop-brands/${slugify(brand)}/${slugify(series)}`}
+                    class="link">{series}</a
+                >
+            </div>
+        </div>
+    </div>
+
+    <!-- Jump Links -->
+    <nav class="jump-links">
+        <span
+            class="text-sm font-bold mr-4 text-muted border-b-2 border-transparent"
+            >QUICK JUMP:</span
+        >
+        <a href="#configurations">Configurations</a>
+        {
+            specSections.map((s) => (
+                <a href={`#spec-${slugify(s.title)}`}>{s.title}</a>
+            ))
+        }
+    </nav>
+
+    <!-- Configurations -->
+    <section id="configurations" class="section">
+        <h2>Configurations</h2>
+        <div class="config-grid">
+            {
+                ["CPU", "GPU", "RAM", "Storage", "Display"].map((key) => {
+                    const val = laptop.specs[key];
+                    if (!val) return null;
+                    const options = getParsedSpecs(key, val);
+                    return (
+                        <div class="config-box">
+                            <h3 class="config-title">{key}</h3>
+                            <ul class="config-list">
+                                {options.map((opt) => {
+                                    // For CPU/GPU, try to link
+                                    if (key === "CPU") {
+                                        return (
+                                            <li>
+                                                <a
+                                                    href={getLinkForHardware(
+                                                        "cpus",
+                                                        opt,
+                                                    )}
+                                                >
+                                                    {opt}
+                                                </a>
+                                            </li>
+                                        );
+                                    }
+                                    if (key === "GPU") {
+                                        return (
+                                            <li>
+                                                <a
+                                                    href={getLinkForHardware(
+                                                        "gpus",
+                                                        opt,
+                                                    )}
+                                                >
+                                                    {opt}
+                                                </a>
+                                            </li>
+                                        );
+                                    }
+                                    return <li>{opt}</li>;
+                                })}
+                            </ul>
+                        </div>
+                    );
+                })
+            }
+        </div>
+    </section>
+
+    <!-- Detailed Specs -->
+    <section class="section">
+        <h2 class="mb-6">Technical Specifications</h2>
+
+        {
+            specSections.map((section) => (
+                <div id={`spec-${slugify(section.title)}`} class="spec-section">
+                    <h3 class="spec-section-title">{section.title}</h3>
+                    <table class="data-table">
+                        <tbody>
+                            {section.keys.map((key) => {
+                                const val = findSpec(key);
+                                if (!val || val === "-") return null;
+                                const isHardware =
+                                    (key === "CPU" || key === "GPU") && false; // Disable table linking to avoid clutter? Or keep it? Let's keep strict text in table, link in Configs.
+                                // Actually user asked for linking in listed GPUs/CPUs.
+
+                                // Check if this spec needs parsing
+                                const parsed = getParsedSpecs(key, val);
+                                const content = parsed.join(", "); // Join with comma for table view? Or list?
+
+                                // If it's CPU/GPU key, we might want to render links
+                                if (key === "CPU" || key === "GPU") {
+                                    return (
+                                        <tr>
+                                            <th>{key}</th>
+                                            <td class="hardware-cell">
+                                                {parsed.map((p) => (
+                                                    <a
+                                                        href={getLinkForHardware(
+                                                            key === "CPU"
+                                                                ? "cpus"
+                                                                : "gpus",
+                                                            p,
+                                                        )}
+                                                        class="hw-link"
+                                                    >
+                                                        {p}
+                                                    </a>
+                                                ))}
+                                            </td>
+                                        </tr>
+                                    );
+                                }
+
+                                return (
+                                    <tr>
+                                        <th>{key}</th>
+                                        <td>
+                                            {parsed.length > 1 ? (
+                                                <ul class="table-list">
+                                                    {parsed.map((p) => (
+                                                        <li>{p}</li>
+                                                    ))}
+                                                </ul>
+                                            ) : (
+                                                parsed[0]
+                                            )}
+                                        </td>
+                                    </tr>
+                                );
+                            })}
+                        </tbody>
+                    </table>
+                </div>
+            ))
+        }
+    </section>
+
+    <!-- More from Series -->
+    {
+        sameSeries.length > 0 && (
+            <section class="section mt-12 pt-6 border-t">
+                <h2>More from {series} Series</h2>
+                <div class="grid list-grid">
+                    {sameSeries.map((l) => (
+                        <a
+                            href={`/laptop-brands/${slugify(getBrand(l.name))}/${slugify(getSeries(l.name))}/${l.slug || slugify(l.name)}`}
+                            class="mini-card"
+                        >
+                            <span class="font-medium">{l.name}</span>
+                            {l.price && (
+                                <span class="text-sm text-muted">
+                                    ${l.price}
+                                </span>
+                            )}
+                        </a>
+                    ))}
+                </div>
+            </section>
+        )
+    }
+
+    <!-- Alternatives -->
+    {
+        alternatives.length > 0 && (
+            <section class="section">
+                <h2>Alternatives to {laptop.name}</h2>
+                <div class="grid list-grid">
+                    {alternatives.map((l) => (
+                        <a
+                            href={`/laptop-brands/${slugify(getBrand(l.name))}/${slugify(getSeries(l.name))}/${l.slug || slugify(l.name)}`}
+                            class="mini-card"
+                        >
+                            <span class="font-medium">{l.name}</span>
+                            {l.price && (
+                                <span class="text-sm text-muted">
+                                    ${l.price}
+                                </span>
+                            )}
+                        </a>
+                    ))}
+                </div>
+            </section>
+        )
+    }
+</Layout>
+
+<style>
+    /* Additions to Global CSS would be ideal, but keeping scoped for safety */
+    .profile-header {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+        margin-bottom: var(--space-6);
+    }
+    @media (min-width: 768px) {
+        .profile-header {
+            grid-template-columns: 350px 1fr;
+        }
+    }
+
+    .profile-image img {
+        width: 100%;
+        background: #fff;
+        border: var(--border-primary);
+        padding: var(--space-4);
+    }
+
+    .price-tag {
+        font-size: var(--text-3xl);
+        font-weight: 800;
+        display: inline-block;
+        color: var(--color-primary);
+    }
+
+    .score-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-2);
+        margin-bottom: var(--space-4);
+    }
+
+    .score-card {
+        border: var(--border-primary);
+        padding: var(--space-2);
+        text-align: center;
+        background: #fff;
+    }
+    .score-val {
+        display: block;
+        font-size: var(--text-xl);
+        font-weight: 700;
+    }
+    .score-label {
+        font-size: 10px;
+        text-transform: uppercase;
+        color: var(--color-text-muted);
+        letter-spacing: 0.5px;
+    }
+
+    .link {
+        text-decoration: underline;
+        color: var(--color-text);
+    }
+    .link:hover {
+        color: var(--color-primary);
+    }
+
+    /* Jump Links */
+    .jump-links {
+        display: flex;
+        gap: var(--space-4);
+        padding: var(--space-3) 0;
+        margin-bottom: var(--space-6);
+        border-bottom: 1px solid var(--color-border);
+        overflow-x: auto;
+        white-space: nowrap;
+        align-items: center;
+    }
+    .jump-links a {
+        text-decoration: none;
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        font-weight: 500;
+        border: 1px solid transparent;
+        padding: 2px 8px;
+        border-radius: 4px;
+    }
+    .jump-links a:hover {
+        background: var(--color-surface);
+        border-color: var(--color-border);
+    }
+
+    /* Configs */
+    .config-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: var(--space-4);
+    }
+    .config-box {
+        border: var(--border-primary);
+        padding: var(--space-4);
+    }
+    .config-title {
+        font-size: var(--text-sm);
+        text-transform: uppercase;
+        color: var(--color-text-muted);
+        border-bottom: 1px solid var(--color-border);
+        padding-bottom: var(--space-2);
+        margin-bottom: var(--space-2);
+    }
+    .config-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .config-list li {
+        margin-bottom: var(--space-1);
+        font-size: var(--text-sm);
+    }
+    .config-list li a {
+        color: var(--color-text);
+        text-decoration: none;
+        border-bottom: 1px dotted var(--color-text-muted);
+    }
+    .config-list li a:hover {
+        border-bottom: 1px solid var(--color-text);
+    }
+
+    /* Specs Tables */
+    .spec-section {
+        margin-bottom: var(--space-6);
+    }
+    .spec-section-title {
+        font-size: var(--text-xl);
+        margin-bottom: var(--space-4);
+        border-left: 4px solid var(--color-text);
+        padding-left: var(--space-3);
+    }
+    .table-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .hardware-cell {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .hw-link {
+        color: var(--color-text);
+        text-decoration: underline;
+        text-decoration-color: var(--color-border);
+    }
+    .hw-link:hover {
+        text-decoration-color: var(--color-text);
+    }
+
+    /* List Grid */
+    .list-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: var(--space-4);
+        margin-top: var(--space-4);
+    }
+    .mini-card {
+        padding: var(--space-3);
+        border: var(--border-primary);
+        text-decoration: none;
+        color: var(--color-text);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+        transition: transform 0.1s;
+    }
+    .mini-card:hover {
+        background: var(--color-surface);
+        transform: translateY(-2px);
+    }
+</style>

@@ -1,0 +1,167 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import gpus from "../../../data/gpus.json";
+import laptops from "../../../data/laptops.json";
+import { getBrand, slugify } from "../../../utils/data-helpers";
+
+export async function getStaticPaths() {
+    return gpus.map((gpu) => {
+        const brand = getBrand(gpu.name);
+        const modelSlug = gpu.slug || slugify(gpu.name);
+        return {
+            params: {
+                brand: slugify(brand),
+                model: modelSlug,
+            },
+            props: { gpu },
+        };
+    });
+}
+
+const { gpu } = Astro.props;
+
+// Linked Laptops
+const linkedLaptops = laptops
+    .filter((laptop) => {
+        return laptop.specs.GPU && laptop.specs.GPU.includes(gpu.name);
+    })
+    .slice(0, 10);
+
+// Common Uses Logic
+const commonUses = [];
+const score = parseInt(gpu.scores["NanoReview Final Score"] || "0");
+const gamingScore = parseInt(gpu.scores["Gaming"] || "0");
+
+if (gamingScore > 70) commonUses.push("AAA Gaming", "VR Ready");
+else if (gamingScore > 40) commonUses.push("1080p Gaming");
+if (gpu.name.includes("RTX") || gpu.name.includes("RX"))
+    commonUses.push("Ray Tracing");
+if (score > 80) commonUses.push("Professional Rendering", "Machine Learning");
+---
+
+<Layout title={`${gpu.name} Specs & Benchmarks`}>
+    <div class="profile-header grid">
+        <div class="profile-summary">
+            <h1>{gpu.name}</h1>
+            <div class="tags flex gap-2">
+                {commonUses.map((use) => <span class="tag">{use}</span>)}
+            </div>
+
+            <div class="score-grid">
+                {
+                    gpu.scores &&
+                        Object.entries(gpu.scores)
+                            .slice(0, 6)
+                            .map(([key, value]) => (
+                                <div class="score-item">
+                                    <span class="score-label">{key}</span>
+                                    <span class="score-value">{value}</span>
+                                </div>
+                            ))
+                }
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <h2>Specifications</h2>
+        <table class="data-table">
+            <tbody>
+                {
+                    gpu.specs &&
+                        Object.entries(gpu.specs).map(([key, value]) => (
+                            <tr>
+                                <th>{key}</th>
+                                <td>{value}</td>
+                            </tr>
+                        ))
+                }
+            </tbody>
+        </table>
+    </section>
+
+    {
+        linkedLaptops.length > 0 && (
+            <section class="section">
+                <h2>Laptops with {gpu.name}</h2>
+                <div
+                    class="grid"
+                    style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));"
+                >
+                    {linkedLaptops.map((l) => {
+                        const b = getBrand(l.name);
+                        const s = l.slug || slugify(l.name);
+                        const series = l.name.split(" ")[1] || "Other";
+                        return (
+                            <a
+                                href={`/laptop-brands/${slugify(b)}/${slugify(series)}/${s}`}
+                                class="laptop-link"
+                            >
+                                {l.name}
+                            </a>
+                        );
+                    })}
+                </div>
+            </section>
+        )
+    }
+</Layout>
+
+<style>
+    .profile-summary h1 {
+        margin-top: 0;
+    }
+
+    .tags {
+        flex-wrap: wrap;
+        margin-bottom: var(--space-4);
+    }
+
+    .tag {
+        font-size: var(--text-xs);
+        border: 1px solid var(--color-text);
+        padding: 2px 8px;
+        border-radius: 99px;
+        text-transform: uppercase;
+    }
+
+    .score-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: var(--space-2);
+        margin-top: var(--space-4);
+    }
+
+    .score-item {
+        border: var(--border-primary);
+        padding: var(--space-2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .score-value {
+        font-size: var(--text-xl);
+        font-weight: 700;
+    }
+
+    .score-label {
+        font-size: var(--text-xs);
+        color: var(--color-text-muted);
+        text-transform: uppercase;
+    }
+
+    .laptop-link {
+        display: block;
+        padding: var(--space-3);
+        border: var(--border-primary);
+        text-decoration: none;
+        color: var(--color-text);
+        font-size: var(--text-sm);
+    }
+
+    .laptop-link:hover {
+        background-color: var(--color-surface);
+    }
+</style>

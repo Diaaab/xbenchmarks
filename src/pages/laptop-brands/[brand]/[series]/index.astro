@@ -1,0 +1,148 @@
+---
+import Layout from "../../../../layouts/Layout.astro";
+import laptops from "../../../../data/laptops.json";
+import { getBrand, getSeries, slugify } from "../../../../utils/data-helpers";
+
+export async function getStaticPaths() {
+    const paths = [];
+    const brands = [...new Set(laptops.map((l) => getBrand(l.name)))];
+
+    brands.forEach((brand) => {
+        const brandSlug = slugify(brand);
+        const brandLaptops = laptops.filter((l) => getBrand(l.name) === brand);
+        const seriesList = [
+            ...new Set(brandLaptops.map((l) => getSeries(l.name))),
+        ];
+
+        seriesList.forEach((series) => {
+            paths.push({
+                params: {
+                    brand: brandSlug,
+                    series: slugify(series),
+                },
+                props: {
+                    brandName: brand,
+                    seriesName: series,
+                    laptops: brandLaptops.filter(
+                        (l) => getSeries(l.name) === series,
+                    ),
+                },
+            });
+        });
+    });
+
+    return paths;
+}
+
+const { brandName, seriesName, laptops: seriesLaptops } = Astro.props;
+const { brand, series } = Astro.params;
+---
+
+<Layout title={`${brandName} ${seriesName} Series Laptops`}>
+    <h1>{brandName} {seriesName} Series</h1>
+    <p>Available models in this series.</p>
+
+    <div class="laptop-list">
+        {
+            seriesLaptops.map((laptop) => {
+                const modelSlug = laptop.slug || slugify(laptop.name);
+                return (
+                    <div class="laptop-item">
+                        <div class="laptop-info">
+                            <h3>
+                                <a
+                                    href={`/laptop-brands/${brand}/${series}/${modelSlug}`}
+                                >
+                                    {laptop.name}
+                                </a>
+                            </h3>
+                            <div class="specs-preview">
+                                {laptop.specs.CPU && (
+                                    <span>CPU: {laptop.specs.CPU}</span>
+                                )}
+                                {laptop.specs.GPU && (
+                                    <span>GPU: {laptop.specs.GPU}</span>
+                                )}
+                            </div>
+                        </div>
+                        <div class="laptop-meta">
+                            {laptop.price && (
+                                <span class="price">${laptop.price}</span>
+                            )}
+                            <a
+                                href={`/laptop-brands/${brand}/${series}/${modelSlug}`}
+                                class="btn"
+                            >
+                                View Specs
+                            </a>
+                        </div>
+                    </div>
+                );
+            })
+        }
+    </div>
+</Layout>
+
+<style>
+    .laptop-list {
+        display: flex;
+        flex-direction: column; /* Stacked list as per "neat data" request? Or Grid? Stacked is better for density if detailed. */
+        gap: var(--space-4);
+        margin-top: var(--space-6);
+    }
+
+    .laptop-item {
+        border: var(--border-primary);
+        padding: var(--space-4);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--space-4);
+    }
+
+    @media (max-width: 768px) {
+        .laptop-item {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .laptop-meta {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    .laptop-info h3 {
+        font-size: var(--text-lg);
+        margin-bottom: var(--space-2);
+    }
+
+    .laptop-info h3 a {
+        text-decoration: none;
+        color: var(--color-text);
+    }
+
+    .laptop-info h3 a:hover {
+        text-decoration: underline;
+    }
+
+    .specs-preview {
+        font-size: var(--text-sm);
+        color: var(--color-text-muted);
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-4);
+    }
+
+    .laptop-meta {
+        display: flex;
+        align-items: center;
+        gap: var(--space-4);
+        min-width: 150px;
+        justify-content: flex-end;
+    }
+
+    .price {
+        font-weight: 700;
+        font-size: var(--text-lg);
+    }
+</style>

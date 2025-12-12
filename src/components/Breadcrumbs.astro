@@ -1,0 +1,75 @@
+---
+const { pathname } = Astro.url;
+const pathSegments = pathname.split('/').filter(Boolean);
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  ...pathSegments.map((segment, index) => {
+    const href = '/' + pathSegments.slice(0, index + 1).join('/');
+    // Simple formatting: replace hyphens with spaces and capitalize
+    // In a real app we might lookup the specific title from data
+    const label = segment.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    return { label, href };
+  })
+];
+---
+
+<nav aria-label="Breadcrumb" class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    {breadcrumbs.map((crumb, index) => (
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        {index < breadcrumbs.length - 1 ? (
+          <a href={crumb.href} itemprop="item">
+            <span itemprop="name">{crumb.label}</span>
+          </a>
+        ) : (
+          <span itemprop="name" aria-current="page">{crumb.label}</span>
+        )}
+        <meta itemprop="position" content={(index + 1).toString()} />
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<style>
+  .breadcrumbs {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-4);
+    font-family: var(--font-sans);
+  }
+
+  ol {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  li:not(:last-child)::after {
+    content: '/';
+    color: #ccc;
+    margin-left: var(--space-2);
+  }
+
+  a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--color-text);
+    text-decoration: underline;
+  }
+
+  span[aria-current="page"] {
+    color: var(--color-text);
+    font-weight: 500;
+  }
+</style>

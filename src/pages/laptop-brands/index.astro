@@ -1,0 +1,46 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import laptops from "../../data/laptops.json";
+import { getBrand, slugify } from "../../utils/data-helpers";
+
+// Extract unique brands
+const brands = [
+    ...new Set(laptops.map((laptop) => getBrand(laptop.name))),
+].sort();
+---
+
+<Layout title="Laptop Brands - Electrical Escape">
+    <h1>Laptop Brands</h1>
+    <p>Select a brand to view available series and models.</p>
+
+    <div
+        class="grid"
+        style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: var(--space-6);"
+    >
+        {
+            brands.map((brand) => (
+                <a href={`/laptop-brands/${slugify(brand)}`} class="brand-card">
+                    <span class="brand-name">{brand}</span>
+                </a>
+            ))
+        }
+    </div>
+</Layout>
+
+<style>
+    .brand-card {
+        border: var(--border-primary);
+        padding: var(--space-4);
+        text-align: center;
+        text-decoration: none;
+        color: var(--color-text);
+        font-weight: 600;
+        font-size: var(--text-lg);
+        transition: background-color 0.1s;
+    }
+
+    .brand-card:hover {
+        background-color: var(--color-surface);
+        text-decoration: none;
+    }
+</style>

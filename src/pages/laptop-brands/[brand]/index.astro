@@ -1,0 +1,74 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import laptops from "../../../data/laptops.json";
+import { getBrand, getSeries, slugify } from "../../../utils/data-helpers";
+
+export async function getStaticPaths() {
+    const brands = [...new Set(laptops.map((l) => getBrand(l.name)))];
+    return brands.map((brand) => ({
+        params: { brand: slugify(brand) },
+        props: { brandName: brand },
+    }));
+}
+
+const { brand } = Astro.params;
+const { brandName } = Astro.props;
+
+// Filter laptops for this brand
+const brandLaptops = laptops.filter((l) => slugify(getBrand(l.name)) === brand);
+
+// Extract unique series
+// We'll store both the display name and the slug
+const seriesMap = new Map();
+
+brandLaptops.forEach((laptop) => {
+    const s = getSeries(laptop.name);
+    const slug = slugify(s);
+    if (!seriesMap.has(slug)) {
+        seriesMap.set(slug, s);
+    }
+});
+
+const seriesList = Array.from(seriesMap.entries()).sort((a, b) =>
+    a[1].localeCompare(b[1]),
+);
+---
+
+<Layout title={`${brandName} Laptops - Series List`}>
+    <h1>{brandName} Laptops</h1>
+    <p>Browse {brandName} laptops by series.</p>
+
+    <div
+        class="grid"
+        style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); margin-top: var(--space-6);"
+    >
+        {
+            seriesList.map(([slug, name]) => (
+                <a href={`/laptop-brands/${brand}/${slug}`} class="series-card">
+                    <span class="series-name">{name} Series</span>
+                </a>
+            ))
+        }
+    </div>
+</Layout>
+
+<style>
+    .series-card {
+        border: var(--border-primary);
+        padding: var(--space-4);
+        display: block;
+        text-decoration: none;
+        color: var(--color-text);
+        transition: all 0.2s;
+    }
+
+    .series-card:hover {
+        background-color: var(--color-surface);
+        padding-left: var(--space-5); /* Tiny animation effect */
+    }
+
+    .series-name {
+        font-weight: 600;
+        font-size: var(--text-lg);
+    }
+</style>

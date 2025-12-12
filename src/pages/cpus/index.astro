@@ -1,0 +1,71 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import cpus from "../../data/cpus.json";
+import { getBrand, slugify } from "../../utils/data-helpers";
+
+// Get unique brands
+const brands = [...new Set(cpus.map((cpu) => getBrand(cpu.name)))].sort();
+---
+
+<Layout title="CPU Brands" description="Browse CPUs by brand">
+    <section class="section">
+        <h1>CPU Brands</h1>
+        <p class="intro">Browse processors by manufacturer</p>
+
+        <div class="grid brand-grid">
+            {
+                brands.map((brand) => {
+                    const brandCpus = cpus.filter(
+                        (cpu) => getBrand(cpu.name) === brand,
+                    );
+                    return (
+                        <a href={`/cpus/${slugify(brand)}`} class="brand-card">
+                            <h2>{brand}</h2>
+                            <span class="count">
+                                {brandCpus.length} processors
+                            </span>
+                        </a>
+                    );
+                })
+            }
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .intro {
+        color: var(--color-text-muted);
+        margin-bottom: var(--space-6);
+    }
+
+    .brand-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: var(--space-4);
+    }
+
+    .brand-card {
+        padding: var(--space-6);
+        border: var(--border-primary);
+        text-decoration: none;
+        color: var(--color-text);
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+        transition: all 0.2s;
+    }
+
+    .brand-card:hover {
+        background: var(--color-surface);
+        transform: translateY(-2px);
+    }
+
+    .brand-card h2 {
+        margin: 0;
+        font-size: var(--text-xl);
+    }
+
+    .count {
+        font-size: var(--text-sm);
+        color: var(--color-text-muted);
+    }
+</style>
