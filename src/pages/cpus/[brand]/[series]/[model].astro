@@ -137,7 +137,7 @@ function getRivalLink(rivalName) {
         const brand = getBrand(rival.name);
         const series = getSeries(rival.name);
         const modelSlug = rival.slug || slugify(rival.name);
-        return `/cpus/${slugify(brand)}/${slugify(series)}/${modelSlug}`;
+        return `${import.meta.env.BASE_URL}/cpus/${slugify(brand)}/${slugify(series)}/${modelSlug}`;
     }
 
     return null;
@@ -156,7 +156,7 @@ function getGPULink(gpuName) {
         const brand = getBrand(gpu.name);
         const series = getSeries(gpu.name);
         const modelSlug = gpu.slug || slugify(gpu.name);
-        return `/gpus/${slugify(brand)}/${slugify(series)}/${modelSlug}`;
+        return `${import.meta.env.BASE_URL}/gpus/${slugify(brand)}/${slugify(series)}/${modelSlug}`;
     }
 
     return null;
@@ -351,7 +351,7 @@ function getGPULink(gpuName) {
                         const series = getSeries(l.name);
                         return (
                             <a
-                                href={`/laptop-brands/${slugify(b)}/${slugify(series)}/${s}`}
+                                href={`${import.meta.env.BASE_URL}/laptop-brands/${slugify(b)}/${slugify(series)}/${s}`}
                                 class="mini-card"
                             >
                                 <span class="font-medium">{l.name}</span>

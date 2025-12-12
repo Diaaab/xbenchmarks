@@ -122,7 +122,7 @@ function getLinkForHardware(type, name) {
         const brand = getBrand(match.name);
         const series = getSeries(match.name);
         const modelSlug = match.slug || slugify(match.name);
-        return `/${type}/${slugify(brand)}/${slugify(series)}/${modelSlug}`;
+        return `${import.meta.env.BASE_URL}/${type}/${slugify(brand)}/${slugify(series)}/${modelSlug}`;
     }
 
     // Fallback: return to the type index
@@ -244,13 +244,14 @@ function findSpec(key) {
 
             <div class="brand-links mb-6">
                 <span class="text-muted">Brand: </span>
-                <a href={`/laptop-brands/${slugify(brand)}`} class="link"
-                    >{brand}</a
+                <a
+                    href={`${import.meta.env.BASE_URL}/laptop-brands/${slugify(brand)}`}
+                    class="link">{brand}</a
                 >
                 <span class="mx-2">/</span>
                 <span class="text-muted">Series: </span>
                 <a
-                    href={`/laptop-brands/${slugify(brand)}/${slugify(series)}`}
+                    href={`${import.meta.env.BASE_URL}/laptop-brands/${slugify(brand)}/${slugify(series)}`}
                     class="link">{series}</a
                 >
             </div>
@@ -401,7 +402,7 @@ function findSpec(key) {
                 <div class="grid list-grid">
                     {sameSeries.map((l) => (
                         <a
-                            href={`/laptop-brands/${slugify(getBrand(l.name))}/${slugify(getSeries(l.name))}/${l.slug || slugify(l.name)}`}
+                            href={`${import.meta.env.BASE_URL}/laptop-brands/${slugify(getBrand(l.name))}/${slugify(getSeries(l.name))}/${l.slug || slugify(l.name)}`}
                             class="mini-card"
                         >
                             <span class="font-medium">{l.name}</span>
@@ -425,7 +426,7 @@ function findSpec(key) {
                 <div class="grid list-grid">
                     {alternatives.map((l) => (
                         <a
-                            href={`/laptop-brands/${slugify(getBrand(l.name))}/${slugify(getSeries(l.name))}/${l.slug || slugify(l.name)}`}
+                            href={`${import.meta.env.BASE_URL}/laptop-brands/${slugify(getBrand(l.name))}/${slugify(getSeries(l.name))}/${l.slug || slugify(l.name)}`}
                             class="mini-card"
                         >
                             <span class="font-medium">{l.name}</span>
