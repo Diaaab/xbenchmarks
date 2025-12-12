@@ -24,7 +24,9 @@ const { title, description = "Comprehensive Laptop, CPU, and GPU database." } =
 	<body>
 		<header class="site-header">
 			<div class="container flex justify-between items-center">
-				<a href="/" class="site-logo">Electrical Escape</a>
+				<a href={import.meta.env.BASE_URL} class="site-logo"
+					>Electrical Escape</a
+				>
 
 				<button
 					class="hamburger"
@@ -37,9 +39,11 @@ const { title, description = "Comprehensive Laptop, CPU, and GPU database." } =
 				</button>
 
 				<nav id="nav-menu">
-					<a href="/laptop-brands">Laptops</a>
-					<a href="/cpus">CPUs</a>
-					<a href="/gpus">GPUs</a>
+					<a href={`${import.meta.env.BASE_URL}laptop-brands`}
+						>Laptops</a
+					>
+					<a href={`${import.meta.env.BASE_URL}cpus`}>CPUs</a>
+					<a href={`${import.meta.env.BASE_URL}gpus`}>GPUs</a>
 				</nav>
 			</div>
 		</header>
