@@ -1,0 +1,160 @@
+---
+import Layout from "../layouts/Layout.astro";
+import gpus from "../data/gpus.json";
+import { getBrand, slugify } from "../utils/data-helpers";
+
+// Filter for Laptop GPUs
+const laptopGpus = gpus
+    .filter((gpu) => gpu.specs.Case === "Laptop")
+    .sort((a, b) => {
+        const scoreA = parseInt(a.scores["NanoReview Final Score"] || "0");
+        const scoreB = parseInt(b.scores["NanoReview Final Score"] || "0");
+        return scoreB - scoreA;
+    });
+
+function formatScore(score) {
+    return score ? score : "-";
+}
+---
+
+<Layout title="Laptop Graphics Cards Ranking | XBenchmarks">
+    <section class="section">
+        <h1 class="page-title">Laptop GPU Ranking</h1>
+        <p class="section-desc">
+            An updated ranking of the top laptop graphics cards, based on gaming
+            performance, benchmark scores, and efficiency.
+        </p>
+
+        <div class="table-container">
+            <table class="ranking-table">
+                <thead>
+                    <tr>
+                        <th class="rank-col">#</th>
+                        <th class="model-col">GPU</th>
+                        <th class="score-col">Rating</th>
+                        <th>Gaming</th>
+                        <th>Workstation</th>
+                        <th>Energy</th>
+                        <th>TFLOPS<br />(FP32)</th>
+                        <th>Geekbench<br />OpenCL</th>
+                        <th>3DMark<br />Time Spy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        laptopGpus.map((gpu, index) => {
+                            const brand = getBrand(gpu.name);
+                            const modelSlug = gpu.slug || slugify(gpu.name);
+                            const link = `${import.meta.env.BASE_URL}/gpus/${slugify(brand)}/${modelSlug}`;
+                            const score =
+                                gpu.scores["NanoReview Final Score"] || "-";
+                            const gaming = formatScore(gpu.scores["Gaming"]);
+                            // Workstation isn't always present, fall back closely related or -
+                            // Based on user request, map 'Render' column logic if applicable, usually mapped to workstation score
+                            const workstation = formatScore(
+                                gpu.scores["Workstation"],
+                            );
+                            const energy = formatScore(
+                                gpu.scores["Energy Efficiency"],
+                            );
+                            const tflops = formatScore(
+                                gpu.scores["FLOPS (FP32)"],
+                            );
+                            const opencl = formatScore(
+                                gpu.scores["GB6 Compute Score"],
+                            ); // Geekbench usually maps here
+                            const timespy = formatScore(gpu.specs["Time Spy"]);
+
+                            return (
+                                <tr>
+                                    <td class="rank-col">{index + 1}</td>
+                                    <td class="model-col">
+                                        <a href={link} class="table-link">
+                                            {gpu.name}
+                                        </a>
+                                        <div class="brand-tag">{brand}</div>
+                                    </td>
+                                    <td class="score-col">
+                                        <div class="score-badge">{score}</div>
+                                    </td>
+                                    <td>{gaming}</td>
+                                    <td>{workstation}</td>
+                                    <td>{energy}</td>
+                                    <td>{tflops}</td>
+                                    <td>{opencl}</td>
+                                    <td>{timespy}</td>
+                                </tr>
+                            );
+                        })
+                    }
+                </tbody>
+            </table>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .page-title {
+        margin-bottom: var(--space-2);
+    }
+    .section-desc {
+        color: var(--color-text-muted);
+        margin-bottom: var(--space-6);
+        max-width: 60ch;
+    }
+    .table-container {
+        overflow-x: auto;
+    }
+    .ranking-table {
+        width: 100%;
+        min-width: 1000px;
+        border-collapse: collapse;
+        font-size: var(--text-sm);
+    }
+    .ranking-table th,
+    .ranking-table td {
+        padding: var(--space-2) var(--space-3);
+        text-align: left;
+        border-bottom: 1px solid #e5e5e5;
+        vertical-align: middle;
+    }
+    .ranking-table th {
+        font-weight: 600;
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        white-space: nowrap;
+    }
+    .rank-col {
+        width: 40px;
+        text-align: center !important;
+        color: var(--color-text-muted);
+    }
+    .score-col {
+        width: 80px;
+        text-align: center !important;
+    }
+    .table-link {
+        display: block;
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--color-text);
+        margin-bottom: 2px;
+    }
+    .table-link:hover {
+        text-decoration: underline;
+    }
+    .score-badge {
+        display: inline-block;
+        padding: 4px 10px;
+        background-color: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 99px;
+        font-weight: 700;
+        min-width: 40px;
+        text-align: center;
+    }
+    .brand-tag {
+        font-size: var(--text-xs);
+        color: var(--color-text-muted);
+    }
+</style>
