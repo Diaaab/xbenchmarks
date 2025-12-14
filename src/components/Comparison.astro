@@ -1,0 +1,120 @@
+---
+const { item1, item2 } = Astro.props;
+
+function formatKey(key) {
+	return key.replace(/([A-Z])/g, ' $1').replace(/^./, (str) => str.toUpperCase());
+}
+
+function renderValue(value) {
+	if (value === null || typeof value === 'undefined') {
+		return '-';
+	}
+	if (typeof value === 'object' && value !== null) {
+		return 'object';
+	}
+	return value;
+}
+
+const allKeys = [...Object.keys(item1.specs), ...Object.keys(item2.specs)];
+const uniqueKeys = [...new Set(allKeys)];
+---
+
+<div class="comparison-container">
+	<div class="item-container">
+		<div class="item-header">
+			<img src=`${import.meta.env.BASE_URL}${item1.images.main}` alt={item1.name} class="item-image" />
+			<h2><a href=`${import.meta.env.BASE_URL}/${item1.type}s/${item1.slug}`>{item1.name}</a></h2>
+		</div>
+		<div class="item-specs">
+			<table>
+				<tbody>
+					{uniqueKeys.map((key) => {
+						const value1 = item1.specs[key];
+						const value2 = item2.specs[key];
+						let className = '';
+						if (typeof value1 === 'number' && typeof value2 === 'number' && !isNaN(value1) && !isNaN(value2)) {
+							if (value1 > value2) {
+								className = 'winner';
+							}
+						}
+						return (
+							<tr>
+								<td>{formatKey(key)}</td>
+								<td class={className}>{renderValue(value1)}</td>
+							</tr>
+						);
+					})}
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="item-container">
+		<div class="item-header">
+			<img src=`${import.meta.env.BASE_URL}${item2.images.main}` alt={item2.name} class="item-image" />
+			<h2><a href=`${import.meta.env.BASE_URL}/${item2.type}s/${item2.slug}`>{item2.name}</a></h2>
+		</div>
+		<div class="item-specs">
+			<table>
+				<tbody>
+					{uniqueKeys.map((key) => {
+						const value1 = item1.specs[key];
+						const value2 = item2.specs[key];
+						let className = '';
+						if (typeof value2 === 'number' && typeof value1 === 'number' && !isNaN(value1) && !isNaN(value2)) {
+							if (value2 > value1) {
+								className = 'winner';
+							}
+						}
+						return (
+							<tr>
+								<td>{formatKey(key)}</td>
+								<td class={className}>{renderValue(value2)}</td>
+							</tr>
+						);
+					})}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<style>
+	.comparison-container {
+		display: flex;
+		justify-content: space-between;
+		gap: var(--space-4);
+	}
+	.item-container {
+		flex: 1;
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-md);
+		overflow: hidden;
+	}
+	.item-header {
+		text-align: center;
+		padding: var(--space-4);
+		border-bottom: 1px solid var(--color-border);
+	}
+	.item-image {
+		max-width: 100%;
+		height: auto;
+		margin-bottom: var(--space-4);
+	}
+	.item-specs {
+		padding: var(--space-4);
+	}
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+	td {
+		padding: var(--space-2) var(--space-4);
+		border-bottom: 1px solid var(--color-border-muted);
+	}
+	.winner {
+		background-color: #d4edda;
+		color: #155724;
+		font-weight: bold;
+	}
+</style>

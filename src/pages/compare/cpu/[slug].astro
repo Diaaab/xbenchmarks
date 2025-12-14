@@ -1,0 +1,21 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import cpus from "../../../data/cpus.json";
+import Comparison from "../../../components/Comparison.astro";
+import { getComparisons } from "../../../utils/getComparisons.js";
+
+export async function getStaticPaths() {
+	const comparisons = getComparisons(cpus, 500);
+	const paths = comparisons.map((comparison) => ({
+		params: { slug: `${comparison[0].slug}-vs-${comparison[1].slug}` },
+		props: { item1: comparison[0], item2: comparison[1] },
+	}));
+	return paths;
+}
+
+const { item1, item2 } = Astro.props;
+---
+
+<Layout title=`${item1.name} vs ${item2.name} - CPU Comparison`>
+	<Comparison item1={item1} item2={item2} />
+</Layout>
