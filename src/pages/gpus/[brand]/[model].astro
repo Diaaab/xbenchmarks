@@ -72,7 +72,11 @@ if (score > 80) commonUses.push("Professional Rendering", "Machine Learning");
                         Object.entries(gpu.specs).map(([key, value]) => (
                             <tr>
                                 <th>{key}</th>
-                                <td>{value}</td>
+                                <td>
+                                    {key === "TGP / Version"
+                                        ? value.replace(/(\d+W)/g, "$1 ").trim()
+                                        : value}
+                                </td>
                             </tr>
                         ))
                 }
