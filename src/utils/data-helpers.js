@@ -24,3 +24,12 @@ export function slugify(text) {
         .replace(/^-+/, '')             // Trim - from start of text
         .replace(/-+$/, '');            // Trim - from end of text
 }
+
+export function getImageUrl(imagePath, baseUrl = '/xbenchmarks') {
+    if (!imagePath) return '';
+    // If path starts with /, prepend base URL
+    if (imagePath.startsWith('/')) {
+        return baseUrl + imagePath;
+    }
+    return imagePath;
+}

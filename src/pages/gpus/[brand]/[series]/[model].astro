@@ -2,7 +2,7 @@
 import Layout from "../../../../layouts/Layout.astro";
 import gpus from "../../../../data/gpus.json";
 import laptops from "../../../../data/laptops.json";
-import { getBrand, getSeries, slugify } from "../../../../utils/data-helpers";
+import { getBrand, getSeries, slugify, getImageUrl } from "../../../../utils/data-helpers";
 import { cleanSpecString, parseTGPVersion } from "../../../../utils/data-parser";
 
 export async function getStaticPaths() {
@@ -118,7 +118,7 @@ const remainingSpecs = Object.entries(gpu.specs || {}).filter(
         <div class="profile-image">
             {
                 gpu.images?.main ? (
-                    <img src={gpu.images.main} alt={gpu.name} />
+                    <img src={getImageUrl(gpu.images.main, import.meta.env.BASE_URL)} alt={gpu.name} />
                 ) : (
                     <div class="placeholder-img">No Image</div>
                 )

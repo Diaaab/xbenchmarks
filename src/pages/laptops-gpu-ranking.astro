@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import gpus from "../data/gpus.json";
-import { getBrand, getSeries, slugify } from "../utils/data-helpers";
+import { getBrand, getSeries, slugify, getImageUrl } from "../utils/data-helpers";
 
 // Filter for Laptop GPUs
 const laptopGpus = gpus
@@ -73,7 +73,7 @@ function formatScore(score) {
                                     <td class="thumb-col">
                                         {gpu.images?.main && (
                                             <img
-                                                src={gpu.images.main}
+                                                src={getImageUrl(gpu.images.main, import.meta.env.BASE_URL)}
                                                 alt={gpu.name}
                                                 class="thumbnail"
                                             />

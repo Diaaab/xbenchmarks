@@ -3,7 +3,7 @@ import Layout from "../../../../layouts/Layout.astro";
 import laptops from "../../../../data/laptops.json";
 import cpus from "../../../../data/cpus.json";
 import gpus from "../../../../data/gpus.json";
-import { getBrand, getSeries, slugify } from "../../../../utils/data-helpers";
+import { getBrand, getSeries, slugify, getImageUrl } from "../../../../utils/data-helpers";
 import {
     parseRAM,
     parseStorage,
@@ -216,7 +216,7 @@ function findSpec(key) {
         <div class="profile-image">
             {
                 laptop.images?.main ? (
-                    <img src={laptop.images.main} alt={laptop.name} />
+                    <img src={getImageUrl(laptop.images.main, import.meta.env.BASE_URL)} alt={laptop.name} />
                 ) : (
                     <div class="placeholder-img">No Image</div>
                 )

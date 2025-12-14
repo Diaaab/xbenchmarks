@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import cpus from "../data/cpus.json";
-import { getBrand, getSeries, slugify } from "../utils/data-helpers";
+import { getBrand, getSeries, slugify, getImageUrl } from "../utils/data-helpers";
 
 // Filter for Laptop CPUs
 const laptopCpus = cpus
@@ -86,7 +86,7 @@ function formatScore(score) {
                                     <td class="thumb-col">
                                         {cpu.images?.main && (
                                             <img
-                                                src={cpu.images.main}
+                                                src={getImageUrl(cpu.images.main, import.meta.env.BASE_URL)}
                                                 alt={cpu.name}
                                                 class="thumbnail"
                                             />
