@@ -1,0 +1,65 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import laptops from "../../data/laptops.json";
+import { getComparisons } from "../../utils/getComparisons.js";
+
+const comparisons = getComparisons(laptops, 500);
+---
+
+<Layout title="Compare Laptops - XBenchmarks">
+	<section class="hero">
+		<h1>Compare Laptops</h1>
+		<p class="intro">
+			Select a comparison to see a side-by-side analysis of two laptops.
+		</p>
+
+		<div class="grid">
+			{comparisons.map((comparison) => (
+				<a href=`${import.meta.env.BASE_URL}/compare/laptop/${comparison[0].slug}-vs-${comparison[1].slug}` class="card">
+					<h2>{comparison[0].name} vs {comparison[1].name}</h2>
+					<span class="arrow">&rarr;</span>
+				</a>
+			))}
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.hero {
+		padding: var(--space-6) 0;
+	}
+	.intro {
+		font-size: var(--text-lg);
+		color: var(--color-text-muted);
+		max-width: 60ch;
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: var(--space-4);
+		margin-top: var(--space-6);
+	}
+	.card {
+		display: flex;
+		flex-direction: column;
+		padding: var(--space-4);
+		border: var(--border-primary);
+		text-decoration: none;
+		color: var(--color-text);
+		transition: transform 0.1s ease;
+	}
+	.card:hover {
+		background-color: var(--color-surface);
+		transform: translateY(-2px);
+		box-shadow: 2px 2px 0 var(--color-border);
+	}
+	.card h2 {
+		font-size: var(--text-xl);
+		margin-bottom: var(--space-2);
+	}
+	.arrow {
+		align-self: flex-end;
+		font-size: var(--text-xl);
+		margin-top: auto;
+	}
+</style>
