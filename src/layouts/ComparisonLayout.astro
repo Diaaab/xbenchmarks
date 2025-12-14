@@ -1,0 +1,168 @@
+---
+import Layout from "./Layout.astro";
+
+const { item1, item2, title } = Astro.props;
+
+function getAdvantageClass(advantage) {
+  if (advantage.type === 'positive') return 'advantage-positive';
+  if (advantage.type === 'negative') return 'advantage-negative';
+  return '';
+}
+---
+
+<Layout {title}>
+  <div class="card">
+    <div class="card-block">
+      <div class="compare-head">
+        <div class="compare-head-item">
+          <a href="#">
+            <div class="mt" id="first-phone">{item1.name}</div>
+          </a>
+        </div>
+        <div class="compare-head-vs">VS</div>
+        <div class="compare-head-item">
+          <a href="#">
+            <div class="mt" id="second-phone">{item2.name}</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-block bb-light pb flex flex-wrap">
+      <div class="card-head">
+        <h2 id="diff" class="title-h2">Key Differences</h2>
+      </div>
+    </div>
+    <div class="card-block">
+      <div class="key-differences">
+        <div class="advantages">
+          <div class="title-h4">Advantages of {item1.name}</div>
+          <ul class="proscons-list">
+            {item1.advantages.map((adv) => (
+              <li class={getAdvantageClass(adv)}><span class="icn-plus-css"></span>{adv.text}</li>
+            ))}
+          </ul>
+        </div>
+        <div class="advantages">
+          <div class="title-h4">Advantages of {item2.name}</div>
+          <ul class="proscons-list">
+            {item2.advantages.map((adv) => (
+              <li class={getAdvantageClass(adv)}><span class="icn-plus-css"></span>{adv.text}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-block bb-light pb flex flex-wrap">
+      <div class="card-head">
+        <h2 id="specs" class="title-h2">Specifications</h2>
+      </div>
+    </div>
+    <table class="specs-table specs-table-compare">
+      <tbody>
+        {Object.keys(item1.specs).map(key => (
+          <tr>
+            <td class="cell-h">{key}</td>
+            <td class="cell-s1">{item1.specs[key]}</td>
+            <td class="cell-s2">{item2.specs[key]}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</Layout>
+
+<style>
+  .card {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  .card-block {
+    padding: 1rem;
+  }
+  .bb-light {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .pb {
+    padding-bottom: 1rem;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .compare-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .compare-head-item {
+    flex: 1;
+  }
+  .compare-head-vs {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 1rem;
+  }
+  .title-h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .key-differences {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .title-h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .proscons-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .proscons-list li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .icn-plus-css {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5rem;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 50%;
+  }
+  .icn-plus-css::before {
+    content: '+';
+  }
+  .specs-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .specs-table th, .specs-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+  }
+  .cell-h {
+    font-weight: 600;
+  }
+  .cell-s1, .cell-s2 {
+    text-align: center;
+  }
+</style>
