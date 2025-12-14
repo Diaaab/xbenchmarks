@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import gpus from "../data/gpus.json";
-import { getBrand, slugify } from "../utils/data-helpers";
+import { getBrand, getSeries, slugify } from "../utils/data-helpers";
 
 // Filter for Laptop GPUs
 const laptopGpus = gpus
@@ -44,8 +44,9 @@ function formatScore(score) {
                     {
                         laptopGpus.map((gpu, index) => {
                             const brand = getBrand(gpu.name);
+                            const series = getSeries(gpu.name);
                             const modelSlug = gpu.slug || slugify(gpu.name);
-                            const link = `${import.meta.env.BASE_URL}/gpus/${slugify(brand)}/${modelSlug}`;
+                            const link = `${import.meta.env.BASE_URL}/gpus/${slugify(brand)}/${slugify(series)}/${modelSlug}`;
                             const score =
                                 gpu.scores["NanoReview Final Score"] || "-";
                             const gaming = formatScore(gpu.scores["Gaming"]);

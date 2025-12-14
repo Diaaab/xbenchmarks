@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import cpus from "../data/cpus.json";
-import { getBrand, slugify } from "../utils/data-helpers";
+import { getBrand, getSeries, slugify } from "../utils/data-helpers";
 
 // Filter for Laptop CPUs
 const laptopCpus = cpus
@@ -45,8 +45,9 @@ function formatScore(score) {
                     {
                         laptopCpus.map((cpu, index) => {
                             const brand = getBrand(cpu.name);
+                            const series = getSeries(cpu.name);
                             const modelSlug = cpu.slug || slugify(cpu.name);
-                            const link = `${import.meta.env.BASE_URL}/cpus/${slugify(brand)}/${modelSlug}`;
+                            const link = `${import.meta.env.BASE_URL}/cpus/${slugify(brand)}/${slugify(series)}/${modelSlug}`;
                             const score =
                                 cpu.scores["NanoReview Final Score"] || "-";
                             const igpu = formatScore(
