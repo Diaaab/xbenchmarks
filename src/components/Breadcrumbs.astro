@@ -1,35 +1,54 @@
 ---
 const { pathname } = Astro.url;
-const pathSegments = pathname.split('/').filter(Boolean);
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, ""); // Remove trailing slash
+let relativePath = pathname;
+
+// Remove base URL from the beginning of the path if present
+if (relativePath.startsWith(baseUrl)) {
+  relativePath = relativePath.slice(baseUrl.length);
+}
+
+const pathSegments = relativePath.split("/").filter(Boolean);
 
 const breadcrumbs = [
-  { label: 'Home', href: '/' },
+  { label: "Home", href: baseUrl || "/" },
   ...pathSegments.map((segment, index) => {
-    const href = '/' + pathSegments.slice(0, index + 1).join('/');
+    const href = `${baseUrl}/${pathSegments.slice(0, index + 1).join("/")}`;
     // Simple formatting: replace hyphens with spaces and capitalize
-    // In a real app we might lookup the specific title from data
-    const label = segment.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    const label = segment
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (c) => c.toUpperCase());
     return { label, href };
-  })
+  }),
 ];
 ---
 
-<nav aria-label="Breadcrumb" class="breadcrumbs">
-  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-    {breadcrumbs.map((crumb, index) => (
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        {index < breadcrumbs.length - 1 ? (
-          <a href={crumb.href} itemprop="item">
-            <span itemprop="name">{crumb.label}</span>
-          </a>
-        ) : (
-          <span itemprop="name" aria-current="page">{crumb.label}</span>
-        )}
-        <meta itemprop="position" content={(index + 1).toString()} />
-      </li>
-    ))}
-  </ol>
-</nav>
+{
+  breadcrumbs.length > 1 && (
+    <nav aria-label="Breadcrumb" class="breadcrumbs">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        {breadcrumbs.map((crumb, index) => (
+          <li
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+          >
+            {index < breadcrumbs.length - 1 ? (
+              <a href={crumb.href} itemprop="item">
+                <span itemprop="name">{crumb.label}</span>
+              </a>
+            ) : (
+              <span itemprop="name" aria-current="page">
+                {crumb.label}
+              </span>
+            )}
+            <meta itemprop="position" content={(index + 1).toString()} />
+          </li>
+        ))}
+      </ol>
+    </nav>
+  )
+}
 
 <style>
   .breadcrumbs {
@@ -53,7 +72,7 @@ const breadcrumbs = [
   }
 
   li:not(:last-child)::after {
-    content: '/';
+    content: "/";
     color: #ccc;
     margin-left: var(--space-2);
   }

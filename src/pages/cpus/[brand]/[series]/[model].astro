@@ -3,7 +3,7 @@ import Layout from "../../../../layouts/Layout.astro";
 import cpus from "../../../../data/cpus.json";
 import gpus from "../../../../data/gpus.json";
 import laptops from "../../../../data/laptops.json";
-import { getBrand, getSeries, slugify } from "../../../../utils/data-helpers";
+import { getBrand, getSeries, slugify, getImageUrl } from "../../../../utils/data-helpers";
 import {
     cleanSpecString,
     parseMemoryTypes,
@@ -137,7 +137,7 @@ function getRivalLink(rivalName) {
         const brand = getBrand(rival.name);
         const series = getSeries(rival.name);
         const modelSlug = rival.slug || slugify(rival.name);
-        return `/cpus/${slugify(brand)}/${slugify(series)}/${modelSlug}`;
+        return `${import.meta.env.BASE_URL}/cpus/${slugify(brand)}/${slugify(series)}/${modelSlug}`;
     }
 
     return null;
@@ -156,7 +156,7 @@ function getGPULink(gpuName) {
         const brand = getBrand(gpu.name);
         const series = getSeries(gpu.name);
         const modelSlug = gpu.slug || slugify(gpu.name);
-        return `/gpus/${slugify(brand)}/${slugify(series)}/${modelSlug}`;
+        return `${import.meta.env.BASE_URL}/gpus/${slugify(brand)}/${slugify(series)}/${modelSlug}`;
     }
 
     return null;
@@ -171,7 +171,7 @@ function getGPULink(gpuName) {
         <div class="profile-image">
             {
                 cpu.images?.main ? (
-                    <img src={cpu.images.main} alt={cpu.name} />
+                    <img src={getImageUrl(cpu.images.main, import.meta.env.BASE_URL)} alt={cpu.name} />
                 ) : (
                     <div class="placeholder-img">No Image</div>
                 )
@@ -198,6 +198,20 @@ function getGPULink(gpuName) {
                                 </div>
                             ))
                 }
+            </div>
+
+            <div class="brand-links mb-6">
+                <span class="text-muted">Brand: </span>
+                <a
+                    href={`${import.meta.env.BASE_URL}/cpus/${slugify(getBrand(cpu.name))}`}
+                    class="link">{getBrand(cpu.name)}</a
+                >
+                <span class="mx-2">/</span>
+                <span class="text-muted">Series: </span>
+                <a
+                    href={`${import.meta.env.BASE_URL}/cpus/${slugify(getBrand(cpu.name))}/${slugify(getSeries(cpu.name))}`}
+                    class="link">{getSeries(cpu.name)}</a
+                >
             </div>
         </div>
     </div>
@@ -351,7 +365,7 @@ function getGPULink(gpuName) {
                         const series = getSeries(l.name);
                         return (
                             <a
-                                href={`/laptop-brands/${slugify(b)}/${slugify(series)}/${s}`}
+                                href={`${import.meta.env.BASE_URL}/laptop-brands/${slugify(b)}/${slugify(series)}/${s}`}
                                 class="mini-card"
                             >
                                 <span class="font-medium">{l.name}</span>

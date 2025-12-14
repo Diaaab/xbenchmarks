@@ -44,7 +44,10 @@ const seriesList = Array.from(seriesMap.entries()).sort((a, b) =>
     >
         {
             seriesList.map(([slug, name]) => (
-                <a href={`/laptop-brands/${brand}/${slug}`} class="series-card">
+                <a
+                    href={`${import.meta.env.BASE_URL}/laptop-brands/${brand}/${slug}`}
+                    class="series-card"
+                >
                     <span class="series-name">{name} Series</span>
                 </a>
             ))

@@ -40,7 +40,7 @@ const seriesList = Array.from(seriesMap.values()).sort();
         {
             seriesList.map((series) => (
                 <a
-                    href={`/gpus/${brand}/${slugify(series)}`}
+                    href={`${import.meta.env.BASE_URL}/gpus/${brand}/${slugify(series)}`}
                     class="series-card"
                 >
                     <span class="series-name">{series} Series</span>

@@ -1,5 +1,5 @@
 export function cleanSpecString(str) {
-    if (!str) return [];
+    if (!str) return '';
     // Remove the leading "- \n\t\t\t\t" junk
     let clean = str.replace(/^- \s+[\n\t]*/, '').trim();
     return clean;
@@ -21,31 +21,15 @@ export function parseStorage(str) {
 
 export function parseDisplay(str) {
     const clean = cleanSpecString(str);
-    // Resolutions like 1920 x 1080. 
-    // Sometimes followed by text like (IPS, 120Hz).
-    // Pattern: Digit x Digit.
-    // Issue: "1920 x 12002560 x 1600"
-    // Heuristic: Break before a number that starts a new resolution.
-    // But how to distinguish "1200" part of res from next res?
-    // Usually resolution widths/heights are 3-4 digits.
-    // Try to inject a break before a 3-4 digit number that follows a 3-4 digit number?
-    // This is tricky. 
-    // Alternative: If we see `\d{3,4} x \d{3,4}`, we capture it.
-    // Let's rely on the " x " pattern.
-    // "1920 x 1200"
-    // "2560 x 1600"
-    // If we match `(\d{3,4}\s*x\s*\d{3,4})`, we can extract all matches.
-    // What if there is text in parentheses? "1920 x 1200 (OLED)2560 x 1600"
-    // Then `(OLED)` is stuck to `2560`.
-    // Let's try splitting by lookahead for a generic resolution pattern.
-    // Pattern: `(?=\d{3,4}\s*x\s*\d{3,4})`
-    // Skip the first match (beginning of string).
+    if (!clean.includes('x')) {
+        return [clean];
+    }
 
-    // Safety check: if no " x ", just return as is
-    if (!clean.includes(' x ')) return [clean];
+    // Split by resolution pattern to handle concatenated resolutions like "1920 x 12003200 x 2000"
+    // This approach captures resolution patterns and uses them as delimiters
+    const parts = clean.split(/(\d{3,4}\s*x\s*\d{3,4})/).filter(p => p.trim());
 
-    // Split by lookahead for number x number, but only if it's NOT at the start
-    return clean.split(/(?<!^)(?=\d{3,4}\s*x\s*\d{3,4})/).map(s => s.trim()).filter(Boolean);
+    return parts.map(s => s.trim()).filter(Boolean);
 }
 
 export function parseCPU(str) {
@@ -80,5 +64,12 @@ export function parseMemoryTypes(str) {
         return clean.split(' - ').map(s => s.trim()).filter(Boolean);
     }
     return [clean];
+}
+
+export function parseTGPVersion(str) {
+    const clean = cleanSpecString(str);
+    // Handle TGP values that are concatenated without spaces like "140W130W115W110W100W95W85W75W50W35W"
+    // Split on 'W' followed by a digit
+    return clean.replace(/W(?=\d)/g, 'W\n').split('\n').map(s => s.trim()).filter(Boolean);
 }
 

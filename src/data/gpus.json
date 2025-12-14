@@ -5,7 +5,7 @@
     "slug": "radeon-rx-9060-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "330",
     "scores": {
@@ -132,7 +132,7 @@
     "slug": "geforce-rtx-5060",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "409",
     "scores": {
@@ -259,7 +259,7 @@
     "slug": "geforce-rtx-5060-laptop",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -386,7 +386,7 @@
     "slug": "geforce-rtx-4070-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -513,7 +513,7 @@
     "slug": "geforce-rtx-5070-ti-laptop",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -637,7 +637,7 @@
     "slug": "geforce-rtx-5070-laptop",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -761,7 +761,7 @@
     "slug": "geforce-rtx-5050-laptop",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -887,7 +887,7 @@
     "slug": "geforce-rtx-4060-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -1013,7 +1013,7 @@
     "slug": "radeon-860m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-generic.png"
+      "main": "/images/gpu-radeon-generic.png"
     },
     "price": null,
     "scores": {
@@ -1133,7 +1133,7 @@
     "slug": "intel-arc-140v",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-arc.png"
+      "main": "/images/gpu-intel-arc.png"
     },
     "price": null,
     "scores": {
@@ -1253,7 +1253,7 @@
     "slug": "geforce-rtx-5080-laptop",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -1377,7 +1377,7 @@
     "slug": "geforce-rtx-5090-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -1502,7 +1502,7 @@
     "slug": "geforce-rtx-5090",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -1627,7 +1627,7 @@
     "slug": "radeon-rx-9070-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "653",
     "scores": {
@@ -1753,7 +1753,7 @@
     "slug": "geforce-rtx-5080",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "1295",
     "scores": {
@@ -1879,7 +1879,7 @@
     "slug": "radeon-780m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-generic.png"
+      "main": "/images/gpu-radeon-generic.png"
     },
     "price": null,
     "scores": {
@@ -1998,7 +1998,7 @@
     "slug": "geforce-rtx-5050",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "256",
     "scores": {
@@ -2125,7 +2125,7 @@
     "slug": "geforce-rtx-5070",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "567",
     "scores": {
@@ -2251,7 +2251,7 @@
     "slug": "geforce-rtx-5060-ti-16gb",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "475",
     "scores": {
@@ -2378,7 +2378,7 @@
     "slug": "geforce-rtx-5060-ti",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "359",
     "scores": {
@@ -2505,7 +2505,7 @@
     "slug": "geforce-rtx-4060",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "418",
     "scores": {
@@ -2633,7 +2633,7 @@
     "slug": "geforce-rtx-5070-ti",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "825",
     "scores": {
@@ -2759,7 +2759,7 @@
     "slug": "geforce-rtx-3060",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "319",
     "scores": {
@@ -2887,7 +2887,7 @@
     "slug": "geforce-rtx-4090",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "2913",
     "scores": {
@@ -3013,7 +3013,7 @@
     "slug": "intel-arc-140t",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-arc.png"
+      "main": "/images/gpu-intel-arc.png"
     },
     "price": null,
     "scores": {
@@ -3129,7 +3129,7 @@
     "slug": "geforce-rtx-3080",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "709",
     "scores": {
@@ -3256,7 +3256,7 @@
     "slug": "apple-m4-gpu-8-core",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -3344,7 +3344,7 @@
     "slug": "apple-m4-gpu",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -3432,7 +3432,7 @@
     "slug": "intel-arc-b580",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-arc.png"
+      "main": "/images/gpu-intel-arc.png"
     },
     "price": "323",
     "scores": {
@@ -3559,7 +3559,7 @@
     "slug": "radeon-rx-9070",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "575",
     "scores": {
@@ -3686,7 +3686,7 @@
     "slug": "geforce-rtx-4050-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -3813,7 +3813,7 @@
     "slug": "geforce-rtx-4080-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -3940,7 +3940,7 @@
     "slug": "geforce-rtx-3080-ti",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "617",
     "scores": {
@@ -4067,7 +4067,7 @@
     "slug": "geforce-rtx-3090",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "1470",
     "scores": {
@@ -4194,7 +4194,7 @@
     "slug": "geforce-rtx-3070",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -4322,7 +4322,7 @@
     "slug": "radeon-840m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-generic.png"
+      "main": "/images/gpu-radeon-generic.png"
     },
     "price": null,
     "scores": {
@@ -4441,7 +4441,7 @@
     "slug": "geforce-rtx-3050-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -4567,7 +4567,7 @@
     "slug": "radeon-rx-7700-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "546",
     "scores": {
@@ -4695,7 +4695,7 @@
     "slug": "apple-m4-max-gpu-40-core",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -4823,7 +4823,7 @@
     "slug": "geforce-rtx-4070-super",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "953",
     "scores": {
@@ -4950,7 +4950,7 @@
     "slug": "apple-m4-pro-gpu-20-core",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -5077,7 +5077,7 @@
     "slug": "radeon-890m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-generic.png"
+      "main": "/images/gpu-radeon-generic.png"
     },
     "price": null,
     "scores": {
@@ -5197,7 +5197,7 @@
     "slug": "radeon-8060s",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-generic.png"
+      "main": "/images/gpu-radeon-generic.png"
     },
     "price": null,
     "scores": {
@@ -5317,7 +5317,7 @@
     "slug": "geforce-rtx-3060-ti",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "333",
     "scores": {
@@ -5445,7 +5445,7 @@
     "slug": "intel-arc-130v",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-arc.png"
+      "main": "/images/gpu-intel-arc.png"
     },
     "price": null,
     "scores": {
@@ -5524,7 +5524,7 @@
     "slug": "geforce-rtx-4090-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -5650,7 +5650,7 @@
     "slug": "geforce-rtx-3050",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -5775,7 +5775,7 @@
     "slug": "radeon-680m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-generic.png"
+      "main": "/images/gpu-radeon-generic.png"
     },
     "price": null,
     "scores": {
@@ -5902,7 +5902,7 @@
     "slug": "apple-m3-ultra-gpu-80-core",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -5991,7 +5991,7 @@
     "slug": "intel-arc-130t",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-arc.png"
+      "main": "/images/gpu-intel-arc.png"
     },
     "price": null,
     "scores": {
@@ -6100,7 +6100,7 @@
     "slug": "radeon-8040s",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-generic.png"
+      "main": "/images/gpu-radeon-generic.png"
     },
     "price": null,
     "scores": {
@@ -6187,7 +6187,7 @@
     "slug": "radeon-8050s",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-generic.png"
+      "main": "/images/gpu-radeon-generic.png"
     },
     "price": null,
     "scores": {
@@ -6301,7 +6301,7 @@
     "slug": "adreno-x1-45",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/adreno-generic.png"
+      "main": "/images/gpu-adreno-generic.png"
     },
     "price": null,
     "scores": {
@@ -6416,7 +6416,7 @@
     "slug": "radeon-740m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-generic.png"
+      "main": "/images/gpu-radeon-generic.png"
     },
     "price": null,
     "scores": {
@@ -6526,7 +6526,7 @@
     "slug": "apple-m2-gpu-8-core",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -6631,7 +6631,7 @@
     "slug": "apple-m1-gpu",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -6729,7 +6729,7 @@
     "slug": "adreno-x1",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/adreno-generic.png"
+      "main": "/images/gpu-adreno-generic.png"
     },
     "price": null,
     "scores": {
@@ -6818,7 +6818,7 @@
     "slug": "radeon-760m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-generic.png"
+      "main": "/images/gpu-radeon-generic.png"
     },
     "price": null,
     "scores": {
@@ -6937,7 +6937,7 @@
     "slug": "radeon-880m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-generic.png"
+      "main": "/images/gpu-radeon-generic.png"
     },
     "price": null,
     "scores": {
@@ -7056,7 +7056,7 @@
     "slug": "radeon-rx-7800-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "632",
     "scores": {
@@ -7183,7 +7183,7 @@
     "slug": "geforce-rtx-4070",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "812",
     "scores": {
@@ -7310,7 +7310,7 @@
     "slug": "geforce-rtx-4080",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "1756",
     "scores": {
@@ -7437,7 +7437,7 @@
     "slug": "geforce-rtx-4070-ti",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "1038",
     "scores": {
@@ -7564,7 +7564,7 @@
     "slug": "radeon-rx-7900-xtx",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "857",
     "scores": {
@@ -7691,7 +7691,7 @@
     "slug": "geforce-rtx-4080-super",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "1800",
     "scores": {
@@ -7818,7 +7818,7 @@
     "slug": "geforce-rtx-3070-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -7945,7 +7945,7 @@
     "slug": "geforce-rtx-3080-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -8072,7 +8072,7 @@
     "slug": "geforce-rtx-3080-ti-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -8198,7 +8198,7 @@
     "slug": "intel-arc-b570",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-arc.png"
+      "main": "/images/gpu-intel-arc.png"
     },
     "price": "209",
     "scores": {
@@ -8325,7 +8325,7 @@
     "slug": "radeon-rx-7600",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "275",
     "scores": {
@@ -8452,7 +8452,7 @@
     "slug": "intel-arc-a580",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-arc.png"
+      "main": "/images/gpu-intel-arc.png"
     },
     "price": "263",
     "scores": {
@@ -8578,7 +8578,7 @@
     "slug": "geforce-rtx-4060-ti-16gb",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "732",
     "scores": {
@@ -8705,7 +8705,7 @@
     "slug": "geforce-rtx-4060-ti-8gb",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "532",
     "scores": {
@@ -8832,7 +8832,7 @@
     "slug": "intel-arc-a770",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-arc.png"
+      "main": "/images/gpu-intel-arc.png"
     },
     "price": "306",
     "scores": {
@@ -8958,7 +8958,7 @@
     "slug": "apple-m4-ultra-gpu-80-core",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -9080,7 +9080,7 @@
     "slug": "apple-m2-max-gpu-38-core",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -9163,7 +9163,7 @@
     "slug": "apple-m3-gpu-10-core",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -9249,7 +9249,7 @@
     "slug": "apple-m1-pro-gpu",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -9338,7 +9338,7 @@
     "slug": "geforce-gtx-960",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": "96",
     "scores": {
@@ -9462,7 +9462,7 @@
     "slug": "geforce-gtx-1650",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": "243",
     "scores": {
@@ -9586,7 +9586,7 @@
     "slug": "geforce-gtx-1050",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": "114",
     "scores": {
@@ -9710,7 +9710,7 @@
     "slug": "geforce-gtx-970",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": "362",
     "scores": {
@@ -9835,7 +9835,7 @@
     "slug": "geforce-gtx-1060-6gb",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": "352",
     "scores": {
@@ -9961,7 +9961,7 @@
     "slug": "geforce-gtx-980-ti",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": "400",
     "scores": {
@@ -10087,7 +10087,7 @@
     "slug": "geforce-rtx-2060",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "302",
     "scores": {
@@ -10214,7 +10214,7 @@
     "slug": "geforce-gtx-1660-super",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": "203",
     "scores": {
@@ -10341,7 +10341,7 @@
     "slug": "apple-m1-ultra-gpu-64-core",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -10431,7 +10431,7 @@
     "slug": "apple-m4-max-gpu-32-core",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -10519,7 +10519,7 @@
     "slug": "apple-m3-pro-gpu-18-core",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -10602,7 +10602,7 @@
     "slug": "apple-m4-pro-gpu-16-core",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -10682,7 +10682,7 @@
     "slug": "radeon-rx-6500-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "225",
     "scores": {
@@ -10809,7 +10809,7 @@
     "slug": "geforce-gtx-1070",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": "173",
     "scores": {
@@ -10936,7 +10936,7 @@
     "slug": "geforce-gtx-1080-ti",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": "293",
     "scores": {
@@ -11063,7 +11063,7 @@
     "slug": "radeon-rx-6600",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "287",
     "scores": {
@@ -11188,7 +11188,7 @@
     "slug": "radeon-rx-580",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "108",
     "scores": {
@@ -11313,7 +11313,7 @@
     "slug": "radeon-rx-7600-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "442",
     "scores": {
@@ -11438,7 +11438,7 @@
     "slug": "radeon-rx-6800",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "443",
     "scores": {
@@ -11563,7 +11563,7 @@
     "slug": "radeon-rx-6800-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "694",
     "scores": {
@@ -11688,7 +11688,7 @@
     "slug": "radeon-rx-5700-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "193",
     "scores": {
@@ -11813,7 +11813,7 @@
     "slug": "geforce-gtx-1660-ti",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": "283",
     "scores": {
@@ -11941,7 +11941,7 @@
     "slug": "geforce-gtx-1050-ti",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": "141",
     "scores": {
@@ -12069,7 +12069,7 @@
     "slug": "geforce-gtx-1660",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": "358",
     "scores": {
@@ -12196,7 +12196,7 @@
     "slug": "intel-arc-igpu-7-cores",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-arc.png"
+      "main": "/images/gpu-intel-arc.png"
     },
     "price": null,
     "scores": {
@@ -12282,7 +12282,7 @@
     "slug": "intel-arc-igpu-8-cores",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-arc.png"
+      "main": "/images/gpu-intel-arc.png"
     },
     "price": null,
     "scores": {
@@ -12354,7 +12354,7 @@
     "slug": "radeon-rx-7900m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": null,
     "scores": {
@@ -12481,7 +12481,7 @@
     "slug": "radeon-rx-7600m-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": null,
     "scores": {
@@ -12608,7 +12608,7 @@
     "slug": "radeon-rx-6600m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": null,
     "scores": {
@@ -12732,7 +12732,7 @@
     "slug": "nvidia-rtx-6000-ada",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": "6783",
     "scores": {
@@ -12858,7 +12858,7 @@
     "slug": "nvidia-rtx-5000-ada",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": "3782",
     "scores": {
@@ -12984,7 +12984,7 @@
     "slug": "nvidia-rtx-4500-ada",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": "2289",
     "scores": {
@@ -13110,7 +13110,7 @@
     "slug": "nvidia-rtx-4000-ada",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": "1989",
     "scores": {
@@ -13235,7 +13235,7 @@
     "slug": "nvidia-rtx-a4500-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": null,
     "scores": {
@@ -13361,7 +13361,7 @@
     "slug": "nvidia-rtx-a5000-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": null,
     "scores": {
@@ -13487,7 +13487,7 @@
     "slug": "nvidia-rtx-3500-mobile-ada",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": null,
     "scores": {
@@ -13614,7 +13614,7 @@
     "slug": "nvidia-rtx-2000-ada",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": "726",
     "scores": {
@@ -13738,7 +13738,7 @@
     "slug": "nvidia-rtx-3000-mobile-ada",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": null,
     "scores": {
@@ -13850,7 +13850,7 @@
     "slug": "radeon-rx-6600-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "479",
     "scores": {
@@ -13975,7 +13975,7 @@
     "slug": "geforce-rtx-2060-super",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "333",
     "scores": {
@@ -14102,7 +14102,7 @@
     "slug": "radeon-rx-5600-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "536",
     "scores": {
@@ -14227,7 +14227,7 @@
     "slug": "radeon-rx-6650-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "315",
     "scores": {
@@ -14352,7 +14352,7 @@
     "slug": "radeon-rx-6950-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "753",
     "scores": {
@@ -14476,7 +14476,7 @@
     "slug": "radeon-rx-6900-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "779",
     "scores": {
@@ -14600,7 +14600,7 @@
     "slug": "radeon-rx-7900-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "683",
     "scores": {
@@ -14724,7 +14724,7 @@
     "slug": "radeon-rx-7900-gre",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "802",
     "scores": {
@@ -14848,7 +14848,7 @@
     "slug": "geforce-rtx-3070-ti",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "543",
     "scores": {
@@ -14975,7 +14975,7 @@
     "slug": "radeon-rx-6750-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "691",
     "scores": {
@@ -15102,7 +15102,7 @@
     "slug": "radeon-rx-6700-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "646",
     "scores": {
@@ -15229,7 +15229,7 @@
     "slug": "geforce-rtx-4070-ti-super",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "1395",
     "scores": {
@@ -15356,7 +15356,7 @@
     "slug": "radeon-rx-590",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "154",
     "scores": {
@@ -15483,7 +15483,7 @@
     "slug": "radeon-rx-570",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": "173",
     "scores": {
@@ -15608,7 +15608,7 @@
     "slug": "geforce-rtx-2070-super",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "471",
     "scores": {
@@ -15735,7 +15735,7 @@
     "slug": "geforce-rtx-2070",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -15863,7 +15863,7 @@
     "slug": "geforce-rtx-2080",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "738",
     "scores": {
@@ -15990,7 +15990,7 @@
     "slug": "geforce-gtx-1080",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": "382",
     "scores": {
@@ -16117,7 +16117,7 @@
     "slug": "geforce-gtx-1650-super",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": "229",
     "scores": {
@@ -16244,7 +16244,7 @@
     "slug": "intel-arc-a380",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-arc.png"
+      "main": "/images/gpu-intel-arc.png"
     },
     "price": "123",
     "scores": {
@@ -16370,7 +16370,7 @@
     "slug": "intel-iris-xe-graphics-g7-96eu",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-iris.png"
+      "main": "/images/gpu-intel-iris.png"
     },
     "price": null,
     "scores": {
@@ -16493,7 +16493,7 @@
     "slug": "intel-arc-a750",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-arc.png"
+      "main": "/images/gpu-intel-arc.png"
     },
     "price": "230",
     "scores": {
@@ -16620,7 +16620,7 @@
     "slug": "geforce-rtx-3090-ti",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "1284",
     "scores": {
@@ -16746,7 +16746,7 @@
     "slug": "apple-m3-max-gpu-40-core",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -16874,7 +16874,7 @@
     "slug": "geforce-rtx-2080-ti",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "892",
     "scores": {
@@ -17001,7 +17001,7 @@
     "slug": "geforce-rtx-2080-super",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": "301",
     "scores": {
@@ -17128,7 +17128,7 @@
     "slug": "geforce-rtx-3060-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -17256,7 +17256,7 @@
     "slug": "geforce-gtx-1070-ti",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": "328",
     "scores": {
@@ -17383,7 +17383,7 @@
     "slug": "radeon-660m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-generic.png"
+      "main": "/images/gpu-radeon-generic.png"
     },
     "price": null,
     "scores": {
@@ -17509,7 +17509,7 @@
     "slug": "geforce-rtx-2050-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -17634,7 +17634,7 @@
     "slug": "radeon-vega-8",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-vega.png"
+      "main": "/images/gpu-radeon-vega.png"
     },
     "price": null,
     "scores": {
@@ -17754,7 +17754,7 @@
     "slug": "geforce-mx570",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/nvidia-generic.png"
+      "main": "/images/gpu-nvidia-generic.png"
     },
     "price": null,
     "scores": {
@@ -17881,7 +17881,7 @@
     "slug": "radeon-rx-6500m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": null,
     "scores": {
@@ -18005,7 +18005,7 @@
     "slug": "radeon-rx-5500m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": null,
     "scores": {
@@ -18129,7 +18129,7 @@
     "slug": "geforce-rtx-2080-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -18255,7 +18255,7 @@
     "slug": "radeon-pro-5300m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-generic.png"
+      "main": "/images/gpu-radeon-generic.png"
     },
     "price": null,
     "scores": {
@@ -18361,7 +18361,7 @@
     "slug": "apple-m2-pro-gpu-19-core",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -18467,7 +18467,7 @@
     "slug": "geforce-gtx-1650-ti-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": null,
     "scores": {
@@ -18594,7 +18594,7 @@
     "slug": "radeon-graphics-ryzen-7000",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-generic.png"
+      "main": "/images/gpu-radeon-generic.png"
     },
     "price": null,
     "scores": {
@@ -18694,7 +18694,7 @@
     "slug": "intel-uhd-graphics-g1",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-uhd.png"
+      "main": "/images/gpu-intel-uhd.png"
     },
     "price": null,
     "scores": {
@@ -18794,7 +18794,7 @@
     "slug": "intel-uhd-graphics-620",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-uhd.png"
+      "main": "/images/gpu-intel-uhd.png"
     },
     "price": null,
     "scores": {
@@ -18890,7 +18890,7 @@
     "slug": "radeon-vega-6",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-vega.png"
+      "main": "/images/gpu-radeon-vega.png"
     },
     "price": null,
     "scores": {
@@ -19007,7 +19007,7 @@
     "slug": "radeon-610m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-generic.png"
+      "main": "/images/gpu-radeon-generic.png"
     },
     "price": null,
     "scores": {
@@ -19124,7 +19124,7 @@
     "slug": "geforce-gtx-1650-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": null,
     "scores": {
@@ -19249,7 +19249,7 @@
     "slug": "geforce-gtx-1080-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": null,
     "scores": {
@@ -19376,7 +19376,7 @@
     "slug": "geforce-gtx-1070-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": null,
     "scores": {
@@ -19502,7 +19502,7 @@
     "slug": "geforce-gtx-1050-ti-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": null,
     "scores": {
@@ -19629,7 +19629,7 @@
     "slug": "geforce-gtx-1050-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": null,
     "scores": {
@@ -19754,7 +19754,7 @@
     "slug": "radeon-rx-6850m-xt",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": null,
     "scores": {
@@ -19881,7 +19881,7 @@
     "slug": "radeon-rx-7700s",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": null,
     "scores": {
@@ -20004,7 +20004,7 @@
     "slug": "radeon-rx-7600s",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": null,
     "scores": {
@@ -20127,7 +20127,7 @@
     "slug": "intel-uhd-graphics-630",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-uhd.png"
+      "main": "/images/gpu-intel-uhd.png"
     },
     "price": null,
     "scores": {
@@ -20214,7 +20214,7 @@
     "slug": "intel-uhd-graphics-730",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-uhd.png"
+      "main": "/images/gpu-intel-uhd.png"
     },
     "price": null,
     "scores": {
@@ -20303,7 +20303,7 @@
     "slug": "intel-iris-plus-graphics-g7",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-iris.png"
+      "main": "/images/gpu-intel-iris.png"
     },
     "price": null,
     "scores": {
@@ -20392,7 +20392,7 @@
     "slug": "apple-m1-max-gpu-32-core",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/apple-m.png"
+      "main": "/images/gpu-apple-m.png"
     },
     "price": null,
     "scores": {
@@ -20482,7 +20482,7 @@
     "slug": "nvidia-rtx-a500-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": null,
     "scores": {
@@ -20608,7 +20608,7 @@
     "slug": "radeon-rx-vega-10",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-vega.png"
+      "main": "/images/gpu-radeon-vega.png"
     },
     "price": null,
     "scores": {
@@ -20724,7 +20724,7 @@
     "slug": "nvidia-rtx-a2000-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": null,
     "scores": {
@@ -20848,7 +20848,7 @@
     "slug": "nvidia-rtx-a1000-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": null,
     "scores": {
@@ -20972,7 +20972,7 @@
     "slug": "nvidia-rtx-1000-mobile-ada",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": null,
     "scores": {
@@ -21097,7 +21097,7 @@
     "slug": "nvidia-rtx-500-mobile-ada",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": null,
     "scores": {
@@ -21192,7 +21192,7 @@
     "slug": "radeon-rx-vega-7",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-vega.png"
+      "main": "/images/gpu-radeon-vega.png"
     },
     "price": null,
     "scores": {
@@ -21281,7 +21281,7 @@
     "slug": "geforce-rtx-2070-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -21407,7 +21407,7 @@
     "slug": "geforce-gtx-1660-ti-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-gtx.png"
+      "main": "/images/gpu-geforce-gtx.png"
     },
     "price": null,
     "scores": {
@@ -21531,7 +21531,7 @@
     "slug": "intel-uhd-graphics-xe-g4",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-uhd.png"
+      "main": "/images/gpu-intel-uhd.png"
     },
     "price": null,
     "scores": {
@@ -21613,7 +21613,7 @@
     "slug": "intel-iris-xe-graphics-g7-80eu",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-iris.png"
+      "main": "/images/gpu-intel-iris.png"
     },
     "price": null,
     "scores": {
@@ -21703,7 +21703,7 @@
     "slug": "intel-uhd-graphics-64eu",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-uhd.png"
+      "main": "/images/gpu-intel-uhd.png"
     },
     "price": null,
     "scores": {
@@ -21820,7 +21820,7 @@
     "slug": "nvidia-rtx-5000-mobile-ada",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": null,
     "scores": {
@@ -21945,7 +21945,7 @@
     "slug": "intel-uhd-graphics-32eu",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-uhd.png"
+      "main": "/images/gpu-intel-uhd.png"
     },
     "price": null,
     "scores": {
@@ -22027,7 +22027,7 @@
     "slug": "intel-uhd-graphics-jasper-lake-32-eu",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-uhd.png"
+      "main": "/images/gpu-intel-uhd.png"
     },
     "price": null,
     "scores": {
@@ -22141,7 +22141,7 @@
     "slug": "geforce-rtx-2060-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -22267,7 +22267,7 @@
     "slug": "geforce-rtx-3050-ti-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -22394,7 +22394,7 @@
     "slug": "radeon-rx-6800m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-rx.png"
+      "main": "/images/gpu-radeon-rx.png"
     },
     "price": null,
     "scores": {
@@ -22521,7 +22521,7 @@
     "slug": "intel-arc-3-a370m",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-arc.png"
+      "main": "/images/gpu-intel-arc.png"
     },
     "price": null,
     "scores": {
@@ -22647,7 +22647,7 @@
     "slug": "nvidia-t600-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": null,
     "scores": {
@@ -22774,7 +22774,7 @@
     "slug": "nvidia-rtx-2000-mobile-ada",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": null,
     "scores": {
@@ -22899,7 +22899,7 @@
     "slug": "nvidia-rtx-a3000-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": null,
     "scores": {
@@ -23025,7 +23025,7 @@
     "slug": "radeon-vega-3",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-vega.png"
+      "main": "/images/gpu-radeon-vega.png"
     },
     "price": null,
     "scores": {
@@ -23136,7 +23136,7 @@
     "slug": "intel-arc-igpu-4-cores",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-arc.png"
+      "main": "/images/gpu-intel-arc.png"
     },
     "price": null,
     "scores": {
@@ -23196,7 +23196,7 @@
     "slug": "intel-uhd-graphics-770",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-uhd.png"
+      "main": "/images/gpu-intel-uhd.png"
     },
     "price": null,
     "scores": {
@@ -23291,7 +23291,7 @@
     "slug": "intel-uhd-graphics-jasper-lake-24-eu",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-uhd.png"
+      "main": "/images/gpu-intel-uhd.png"
     },
     "price": null,
     "scores": {
@@ -23365,7 +23365,7 @@
     "slug": "intel-uhd-graphics-for-11th-gen-16-eu",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-uhd.png"
+      "main": "/images/gpu-intel-uhd.png"
     },
     "price": null,
     "scores": {
@@ -23439,7 +23439,7 @@
     "slug": "radeon-rx-vega-11",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/radeon-vega.png"
+      "main": "/images/gpu-radeon-vega.png"
     },
     "price": null,
     "scores": {
@@ -23556,7 +23556,7 @@
     "slug": "geforce-mx450",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/nvidia-generic.png"
+      "main": "/images/gpu-nvidia-generic.png"
     },
     "price": null,
     "scores": {
@@ -23681,7 +23681,7 @@
     "slug": "intel-uhd-graphics-750",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/intel-uhd.png"
+      "main": "/images/gpu-intel-uhd.png"
     },
     "price": null,
     "scores": {
@@ -23765,7 +23765,7 @@
     "slug": "geforce-rtx-3070-ti-mobile",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/geforce-rtx.png"
+      "main": "/images/gpu-geforce-rtx.png"
     },
     "price": null,
     "scores": {
@@ -23891,7 +23891,7 @@
     "slug": "geforce-mx550",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/nvidia-generic.png"
+      "main": "/images/gpu-nvidia-generic.png"
     },
     "price": null,
     "scores": {
@@ -24014,7 +24014,7 @@
     "slug": "nvidia-rtx-4000-mobile-ada",
     "type": "gpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/gpu/quadro-generic.png"
+      "main": "/images/gpu-quadro-generic.png"
     },
     "price": null,
     "scores": {

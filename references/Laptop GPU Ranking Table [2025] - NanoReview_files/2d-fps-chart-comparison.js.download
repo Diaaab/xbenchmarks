@@ -1,0 +1,260 @@
+function roundToNiceNumber(t){var e;return t<=10?10:(e=Math.floor(Math.log10(t)),5<(e=t/(t=Math.pow(10,e)))?10*t:2.5<e?5*t:2<e?2.5*t:1<e?2*t:t)}function calculateGridStep(t,e=10){let a=Math.ceil(t/e);a=roundToNiceNumber(a=Math.max(10,a));var o=Math.ceil(t/a)+1;return a=e<o?roundToNiceNumber(a=Math.ceil(t/(e-1))):a}function calculateMaxFps(t){if(t<=0)return 20;var e,a=Math.floor(Math.log10(t));let o;o=a<=1?10:2===a?50:(e=Math.pow(10,a-1),t<5*Math.pow(10,a)?e:5*e);a=Math.ceil(t/o)*o;return Math.max(a,20)}function formatLargeNumber(t){return 1e6<=t?(t/1e6).toFixed(1)+"M":1e3<=t?(t/1e3).toFixed(1)+"K":t.toString()}function renderGamingFpsComparisonGraphs({data:e,names:l,labels:c,selector:t,showLegend:x="bottom",showDecimals:d=1,showPercentageDifference:h=!1,valuesBarPosition:s="outside",theme:p="dark",labelWidth:b=150,barHeight:g=23}){var f={dark:{background:"#1a1a1a",text:"#fff",textSecondary:"#ccc",border:"#444",gridLines:"#333",gridLabels:"#888",tabActive:"#333",tabHover:"#222",legendBackground:"#222",percentageColor:"#4CAF50",barColors:["#4285F4","#FBBC05","#EA4335","#34A853","#5E35B1","#00ACC1"]},light:{background:"#ffffff",text:"#333333",textSecondary:"#666666",border:"#dddddd",gridLines:"#dddddd",gridLabels:"#666666",tabActive:"#f0f0f0",tabHover:"#f5f5f5",legendBackground:"#f5f5f5",percentageColor:"#333333",barColors:["rgb(59 82 210)","#1A365D","rgb(69 146 233)","#708090","#5E35B1","#21ddbb","rgb(9 219 181)","#34A853","#EA4335","#00ACC1"]}};let m=f[p]||f.dark;p=document.querySelector(t);if(p&&e&&e.length){p.innerHTML="";let a={};e.forEach((t,e)=>{t&&t.name&&(a[e]={name:t.name,shortName:t.shortName||t.name})}),f="fps-chart-comparison-styles",document.getElementById(f)||((t=document.createElement("style")).id=f,t.textContent=`
+		.fps-container {
+			padding: 16px;
+			border-radius: 8px;
+			font-family: Arial, sans-serif;
+			width: 100%;
+			box-sizing: border-box;
+			overflow-x: hidden;
+		}
+		
+		.fps-tabs {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+			overflow-x: auto;
+			justify-content: flex-start;
+		}
+		
+		.fps-content {
+			position: relative;
+			min-height: 300px;
+			width: 100%;
+			overflow-x: hidden;
+		}
+		
+		.fps-tab {
+			padding: 8px 16px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 14px;
+			white-space: nowrap;
+			transition: all 0.2s;
+		}
+		
+		.fps-tab.active {
+			font-weight: bold;
+		}
+		
+		.fps-legend {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			margin: 10px 0;
+			padding: 10px;
+			border-radius: 4px;
+		}
+		
+		.fps-legend-item {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+		
+		.fps-color-box {
+			width: 15px;
+			height: 15px;
+		}
+		
+		.fps-legend-label {
+			font-size: 14px;
+		}
+		
+		.fps-charts-container {
+			position: relative;
+			width: 100%;
+		}
+		
+		.fps-grid-container {
+			position: relative;
+			border-left-width: 1px;
+			border-left-style: solid;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+		}
+		
+		.fps-grid-line {
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 1px;
+		}
+		
+		.fps-grid-label {
+			position: absolute;
+			transform: translateX(-50%);
+			font-size: 12px;
+		}
+		
+		.fps-label {
+			position: absolute;
+			left: 50%;
+			bottom: -40px;
+			transform: translateX(-50%);
+			font-size: 14px;
+		}
+		
+		.fps-resolution-label, .fps-game-label {
+			position: absolute;
+			right: calc(100% + 10px);
+			transform: translateY(-50%);
+			font-size: 14px;
+			font-weight: normal;
+			text-align: right;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			height: 36px;
+			white-space: normal;
+			word-break: break-word;
+			line-height: 1.2;
+		}
+		
+		.fps-row-container {
+			position: absolute;
+			left: 0;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+		}
+		
+		.fps-bar-container {
+			position: absolute;
+			left: 0;
+			width: 100%;
+		}
+		
+		.fps-bar {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			border-radius: 0px;
+		}
+		
+		.fps-value-label-inside {
+			position: absolute;
+			right: 8px;
+			top: 50%;
+			transform: translateY(-50%);
+			color: #ffffff;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+			font-size: 13px;
+			font-weight: bold;
+			white-space: nowrap;
+		}
+		
+		.fps-value-label-outside {
+			position: absolute;
+			top: 50%;
+			transform: translate(5px, -50%);
+			font-size: 13px;
+			font-weight: bold;
+			white-space: nowrap;
+		}
+		
+		.fps-percent-label-inside {
+			position: absolute;
+			top: 50%;
+			transform: translate(5px, -50%);
+			font-weight: 500;
+			font-size: 11px;
+			white-space: nowrap;
+			z-index: 10;
+		}
+		
+		.fps-percent-label-outside {
+			position: absolute;
+			right: 8px;
+			top: 50%;
+			transform: translateY(-50%);
+			font-weight: 500;
+			color: #ffffff;
+			font-size: 11px;
+			white-space: nowrap;
+			z-index: 10;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+		}
+		
+		.fps-chart-title {
+			margin-top: 0;
+			margin-bottom: 35px;
+			font-size: 24px;
+			text-align: center;
+		}
+	`,document.head.appendChild(t)),p.classList.add("fps-container"),k(p,{backgroundColor:m.background,color:m.text});let o=L("div","fps-tabs"),i=(k(o,{borderBottom:"1px solid "+m.border,display:1<Object.keys(a).length?"flex":"none"}),p.appendChild(o),L("div","fps-content")),n=(p.appendChild(i),!0),r=null;function u(t){let n=L("div","fps-legend");return k(n,{backgroundColor:m.legendBackground}),t.forEach((t,e)=>{var a=L("div","fps-legend-item"),o=L("div","fps-color-box"),e=(k(o,{backgroundColor:m.barColors[e%m.barColors.length]}),a.appendChild(o),L("span","fps-legend-label"));k(e,{color:m.text}),e.textContent=t.name,a.appendChild(e),n.appendChild(a)}),n}function v(t){return Math.max(Math.round(b*t/100)+10,40)}function C(e,t,a=70){var o=L("div","fps-grid-container"),n=(k(o,{width:`calc(100% - ${b+40}px)`,height:t*a+"px",marginLeft:b+10+"px",marginRight:"80px",borderLeftColor:m.gridLines,borderBottomColor:m.gridLines}),calculateGridStep(e));for(let t=0;t<=e;t+=n){var i=L("div","fps-grid-line"),i=(k(i,{left:t/e*100+"%",backgroundColor:m.gridLines}),o.appendChild(i),L("div","fps-grid-label")),i=(k(i,{left:t/e*100+"%",top:"-20px",color:m.gridLabels}),i.textContent=formatLargeNumber(t),o.appendChild(i),L("div","fps-grid-label"));k(i,{left:t/e*100+"%",bottom:"-20px",color:m.gridLabels}),i.textContent=formatLargeNumber(t),o.appendChild(i)}t=L("div","fps-label");return k(t,{color:m.text}),t.textContent="FPS",o.appendChild(t),o}function w(t,e,a,o,n,i=!1,r=0){var l,e=t/e*100,p=L("div","fps-bar"),a=(k(p,{width:e+"%",backgroundColor:m.barColors[a%m.barColors.length]}),n.appendChild(p),t%1!=0),a=a?t.toFixed(d):Math.round(t).toString();"inside"===s&&5<e?((l=L("div","fps-value-label-inside")).textContent=a,p.appendChild(l)):(k(l=L("div","fps-value-label-outside"),{left:e+"%",color:m.text}),l.textContent=a,n.appendChild(l)),h&&i&&0<r&&(a=((t-r)/r*100).toFixed(0),"inside"===s?(k(l=L("div","fps-percent-label-inside"),{left:e+"%",color:m.percentageColor}),l.textContent=`+${a}%`,n.appendChild(l)):((i=L("div","fps-percent-label-outside")).textContent=`+${a}%`,p.appendChild(i)))}function y(t){i.innerHTML="";var n=L("h3","fps-chart-title");k(n,{color:m.text}),n.textContent=a[t].name,i.appendChild(n);let f=e[t];if(f){let e=null;"top"!==x&&"both"!==x||(n=l.map(t=>({name:t})),(e=u(n)).style.marginBottom="20px",i.appendChild(e));t=L("div","fps-charts-container");i.appendChild(t);let a=0,p=(f.data&&f.data.forEach(t=>{t.forEach(t=>{t&&t>a&&(a=t)})}),calculateMaxFps(a)),o=l.length,d=g*o+25,s=C(p,c.length,d);if(t.appendChild(s),c.forEach((t,e)=>{var a=L("div","fps-resolution-label");k(a,{top:e*d+d/2+"px",color:m.text,width:b+"px"}),a.textContent=t,s.appendChild(a);let n=L("div","fps-row-container");k(n,{top:e*d+"px",height:d+"px"}),s.appendChild(n);t=g*o+20;let i=(Math.max(d,t)-g*o)/2,r=0,l=0;h&&f.data&&f.data[e]&&f.data[e].forEach(t=>{t>r?(l=r,r=t):t>l&&t<r&&(l=t)}),f.data&&f.data[e]&&f.data[e].forEach((t,e)=>{var a,o;0!==t&&null!==t&&(k(a=L("div","fps-bar-container"),{top:i+e*g+"px",height:g+"px"}),n.appendChild(a),o=h&&t===r,w(t,p,e,0,a,o,l))})}),"bottom"===x||"both"===x){let t;(t=e?e.cloneNode(!0):u(l.map(t=>({name:t}))))instanceof HTMLElement&&(t.style.marginTop="60px",t.style.marginBottom="0"),i.appendChild(t)}}}function L(t,e="",a={}){t=document.createElement(t);return e&&(t.className=e),k(t,a),t}function k(t,e){Object.assign(t.style,e)}1<Object.keys(a).length?Object.entries(a).forEach(([t,e])=>{e=((t,e,a=!1,o)=>{let n=L("button","fps-tab "+(a?"active":""));return k(n,{background:a?m.tabActive:"transparent",color:a?m.text:m.textSecondary}),n.textContent=e,n.dataset.id=t,n.addEventListener("mouseover",()=>{n.classList.contains("active")||(n.style.backgroundColor=m.tabHover)}),n.addEventListener("mouseout",()=>{n.classList.contains("active")||(n.style.backgroundColor="transparent")}),n.addEventListener("click",()=>{document.querySelectorAll(".fps-tab").forEach(t=>{t.classList.remove("active"),t instanceof HTMLElement&&(t.style.backgroundColor="transparent",t.style.color=m.textSecondary,t.style.fontWeight="normal")}),n.classList.add("active"),n.style.backgroundColor=m.tabActive,n.style.color=m.text,n.style.fontWeight="bold",o(t)}),n})(t,e.shortName||e.name,n,y);o.appendChild(e),n&&(r=t),n=!1}):1===Object.keys(a).length&&(r=Object.keys(a)[0]),r&&y(r),(f=document.createElement("style")).textContent=`
+      @media (max-width: 768px) {
+        .fps-grid-container {
+          margin-left: ${v(65)+10}px !important;
+          margin-right: 10px !important;
+          width: calc(100% - ${v(65)+40}px) !important;
+        }
+        .fps-resolution-label, .fps-game-label {
+          width: ${v(65)}px !important;
+          font-size: 12px !important;
+        }
+        .fps-top-legend, .fps-bottom-legend {
+          flex-wrap: wrap;
+        }
+        .fps-tabs {
+          justify-content: flex-start;
+        }
+      }
+      @media (max-width: 600px) {
+        .fps-grid-container {
+          margin-left: ${v(55)+10}px !important;
+          margin-right: 10px !important;
+          width: calc(100% - ${v(55)+40}px) !important;
+        }
+        .fps-resolution-label, .fps-game-label {
+          width: ${v(55)}px !important;
+          font-size: 11px !important;
+        }
+      }
+      @media (max-width: 480px) {
+        .fps-grid-container {
+          margin-left: ${v(45)+10}px !important;
+          margin-right: 10px !important;
+          width: calc(100% - ${v(45)+40}px) !important;
+        }
+        .fps-resolution-label, .fps-game-label {
+          width: ${v(45)}px !important;
+          font-size: 10px !important;
+          height: 42px !important; /* Increased height for 3 lines */
+        }
+        .fps-value-label-inside, .fps-value-label-outside {
+          font-size: 11px !important;
+        }
+        .fps-grid-label {
+          font-size: 10px !important;
+        }
+        .fps-percent-label-inside, .fps-percent-label-outside {
+          font-size: 10px !important;
+        }
+        .fps-tab {
+          padding: 6px 12px !important;
+          font-size: 12px !important;
+        }
+      }
+      @media (max-width: 400px) {
+        .fps-grid-container {
+          margin-left: ${v(35)+10}px !important;
+          width: calc(100% - ${v(35)+40}px) !important;
+        }
+        .fps-resolution-label, .fps-game-label {
+          width: ${v(35)}px !important;
+          font-size: 9px !important;
+          height: 48px !important; /* Increased height for 3-4 lines */
+          padding-right: 2px !important;
+        }
+        .fps-value-label-inside, .fps-value-label-outside, .fps-grid-label, .fps-percent-label-inside, .fps-percent-label-outside {
+          font-size: 9px !important;
+        }
+      }
+    `,document.head.appendChild(f),window.addEventListener("resize",()=>{r&&y(r)})}}
