@@ -1,0 +1,29 @@
+---
+const { currentPage, totalPages, baseUrl } = Astro.props;
+---
+
+<nav class="pagination">
+  {currentPage > 1 && <a href={`${baseUrl}?page=${currentPage - 1}`}>Previous</a>}
+  <span>Page {currentPage} of {totalPages}</span>
+  {currentPage < totalPages && <a href={`${baseUrl}?page=${currentPage + 1}`}>Next</a>}
+</nav>
+
+<style>
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .pagination a, .pagination span {
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+  }
+  .pagination a:hover {
+    background-color: #f5f5f5;
+  }
+</style>

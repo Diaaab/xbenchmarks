@@ -2,8 +2,13 @@
 import Layout from "../../layouts/Layout.astro";
 import laptops from "../../data/laptops.json";
 import { getComparisons } from "../../utils/getComparisons.js";
+import Pagination from "../../components/Pagination.astro";
 
-const comparisons = getComparisons(laptops, 500);
+const allComparisons = getComparisons(laptops, 500);
+const currentPage = parseInt(Astro.url.searchParams.get('page') || '1');
+const pageSize = 40;
+const totalPages = Math.ceil(allComparisons.length / pageSize);
+const comparisons = allComparisons.slice((currentPage - 1) * pageSize, currentPage * pageSize);
 ---
 
 <Layout title="Compare Laptops - XBenchmarks">
@@ -15,12 +20,18 @@ const comparisons = getComparisons(laptops, 500);
 
 		<div class="grid">
 			{comparisons.map((comparison) => (
-				<a href=`${import.meta.env.BASE_URL}/compare/laptop/${comparison[0].slug}-vs-${comparison[1].slug}` class="card">
+				<a href=`${import.meta.env.BASE_URL}compare/laptop/${comparison[0].slug}-vs-${comparison[1].slug}` class="card">
 					<h2>{comparison[0].name} vs {comparison[1].name}</h2>
 					<span class="arrow">&rarr;</span>
 				</a>
 			))}
 		</div>
+
+		<Pagination
+			currentPage={currentPage}
+			totalPages={totalPages}
+			baseUrl={`${import.meta.env.BASE_URL}compare/laptop`}
+		/>
 	</section>
 </Layout>
 
