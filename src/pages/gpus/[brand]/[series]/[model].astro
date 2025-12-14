@@ -3,7 +3,7 @@ import Layout from "../../../../layouts/Layout.astro";
 import gpus from "../../../../data/gpus.json";
 import laptops from "../../../../data/laptops.json";
 import { getBrand, getSeries, slugify } from "../../../../utils/data-helpers";
-import { cleanSpecString } from "../../../../utils/data-parser";
+import { cleanSpecString, parseTGPVersion } from "../../../../utils/data-parser";
 
 export async function getStaticPaths() {
     return gpus.map((gpu) => {
@@ -146,6 +146,20 @@ const remainingSpecs = Object.entries(gpu.specs || {}).filter(
                             ))
                 }
             </div>
+
+            <div class="brand-links mb-6">
+                <span class="text-muted">Brand: </span>
+                <a
+                    href={`${import.meta.env.BASE_URL}/gpus/${slugify(getBrand(gpu.name))}`}
+                    class="link">{getBrand(gpu.name)}</a
+                >
+                <span class="mx-2">/</span>
+                <span class="text-muted">Series: </span>
+                <a
+                    href={`${import.meta.env.BASE_URL}/gpus/${slugify(getBrand(gpu.name))}/${slugify(getSeries(gpu.name))}`}
+                    class="link">{getSeries(gpu.name)}</a
+                >
+            </div>
         </div>
     </div>
 
@@ -181,11 +195,23 @@ const remainingSpecs = Object.entries(gpu.specs || {}).filter(
                         <table class="data-table">
                             <tbody>
                                 {sectionSpecs.map(([key, val]) => {
-                                    const cleanVal = cleanSpecString(val);
+                                    let displayValue;
+                                    if (key === "TGP / Version" || key === "TGP") {
+                                        const parsed = parseTGPVersion(val);
+                                        displayValue = (
+                                            <div class="tgp-values">
+                                                {parsed.map((item) => (
+                                                    <div class="tgp-item">{item}</div>
+                                                ))}
+                                            </div>
+                                        );
+                                    } else {
+                                        displayValue = cleanSpecString(val);
+                                    }
                                     return (
                                         <tr>
                                             <th>{key}</th>
-                                            <td>{cleanVal}</td>
+                                            <td>{displayValue}</td>
                                         </tr>
                                     );
                                 })}
@@ -205,11 +231,23 @@ const remainingSpecs = Object.entries(gpu.specs || {}).filter(
                         <tbody>
                             {remainingSpecs.map(([key, val]) => {
                                 if (!val || val === "-") return null;
-                                const cleanVal = cleanSpecString(val);
+                                let displayValue;
+                                if (key === "TGP / Version" || key === "TGP") {
+                                    const parsed = parseTGPVersion(val);
+                                    displayValue = (
+                                        <div class="tgp-values">
+                                            {parsed.map((item) => (
+                                                <div class="tgp-item">{item}</div>
+                                            ))}
+                                        </div>
+                                    );
+                                } else {
+                                    displayValue = cleanSpecString(val);
+                                }
                                 return (
                                     <tr>
                                         <th>{key}</th>
-                                        <td>{cleanVal}</td>
+                                        <td>{displayValue}</td>
                                     </tr>
                                 );
                             })}
@@ -395,5 +433,19 @@ const remainingSpecs = Object.entries(gpu.specs || {}).filter(
     .mini-card:hover {
         background: var(--color-surface);
         transform: translateY(-2px);
+    }
+
+    /* TGP Values */
+    .tgp-values {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .tgp-item {
+        background: var(--color-surface);
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: var(--text-sm);
+        border: 1px solid var(--color-border);
     }
 </style>

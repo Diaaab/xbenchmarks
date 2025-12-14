@@ -30,6 +30,7 @@ function formatScore(score) {
                 <thead>
                     <tr>
                         <th class="rank-col">#</th>
+                        <th class="thumb-col"></th>
                         <th class="model-col">GPU</th>
                         <th class="score-col">Rating</th>
                         <th>Gaming</th>
@@ -69,6 +70,15 @@ function formatScore(score) {
                             return (
                                 <tr>
                                     <td class="rank-col">{index + 1}</td>
+                                    <td class="thumb-col">
+                                        {gpu.images?.main && (
+                                            <img
+                                                src={gpu.images.main}
+                                                alt={gpu.name}
+                                                class="thumbnail"
+                                            />
+                                        )}
+                                    </td>
                                     <td class="model-col">
                                         <a href={link} class="table-link">
                                             {gpu.name}
@@ -129,6 +139,19 @@ function formatScore(score) {
         width: 40px;
         text-align: center !important;
         color: var(--color-text-muted);
+    }
+    .thumb-col {
+        width: 60px;
+        text-align: center !important;
+        padding: var(--space-2) !important;
+    }
+    .thumbnail {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+        border-radius: 4px;
+        background-color: var(--color-surface);
+        padding: 2px;
     }
     .score-col {
         width: 80px;

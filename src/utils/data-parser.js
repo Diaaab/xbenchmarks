@@ -66,3 +66,10 @@ export function parseMemoryTypes(str) {
     return [clean];
 }
 
+export function parseTGPVersion(str) {
+    const clean = cleanSpecString(str);
+    // Handle TGP values that are concatenated without spaces like "140W130W115W110W100W95W85W75W50W35W"
+    // Split on 'W' followed by a digit
+    return clean.replace(/W(?=\d)/g, 'W\n').split('\n').map(s => s.trim()).filter(Boolean);
+}
+

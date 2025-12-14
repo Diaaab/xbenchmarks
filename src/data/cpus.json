@@ -5,7 +5,7 @@
     "slug": "intel-core-ultra-7-255h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -98,7 +98,7 @@
     "slug": "amd-ryzen-ai-7-350",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -191,7 +191,7 @@
     "slug": "apple-m4",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m.jpeg"
+      "main": "/images/cpu-apple-m.jpeg"
     },
     "price": null,
     "scores": {
@@ -278,7 +278,7 @@
     "slug": "apple-m1-max",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m1-max.jpeg"
+      "main": "/images/cpu-apple-m1-max.jpeg"
     },
     "price": null,
     "scores": {
@@ -365,7 +365,7 @@
     "slug": "intel-core-ultra-9-275hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-9.jpeg"
+      "main": "/images/cpu-intel-core-ultra-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -458,7 +458,7 @@
     "slug": "amd-ryzen-9-9955hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -551,7 +551,7 @@
     "slug": "apple-m2-pro",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m2-pro.jpeg"
+      "main": "/images/cpu-apple-m2-pro.jpeg"
     },
     "price": null,
     "scores": {
@@ -639,7 +639,7 @@
     "slug": "intel-core-ultra-7-258v",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -732,7 +732,7 @@
     "slug": "apple-m1",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m.jpeg"
+      "main": "/images/cpu-apple-m.jpeg"
     },
     "price": null,
     "scores": {
@@ -820,7 +820,7 @@
     "slug": "qualcomm-snapdragon-x-x1-26-100",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/qualcomm-snapdragon-x-plus.jpeg"
+      "main": "/images/cpu-qualcomm-snapdragon-x-plus.jpeg"
     },
     "price": null,
     "scores": {
@@ -914,7 +914,7 @@
     "slug": "intel-core-5-120u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-generic.jpeg"
+      "main": "/images/cpu-intel-core-generic.jpeg"
     },
     "price": null,
     "scores": {
@@ -1008,7 +1008,7 @@
     "slug": "apple-m2",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m2.jpeg"
+      "main": "/images/cpu-apple-m2.jpeg"
     },
     "price": null,
     "scores": {
@@ -1096,7 +1096,7 @@
     "slug": "intel-core-ultra-9-285h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-9.jpeg"
+      "main": "/images/cpu-intel-core-ultra-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -1189,7 +1189,7 @@
     "slug": "amd-ryzen-ai-9-hx-370",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -1282,7 +1282,7 @@
     "slug": "amd-ryzen-ai-5-340",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -1374,7 +1374,7 @@
     "slug": "intel-core-ultra-5-226v",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -1466,7 +1466,7 @@
     "slug": "amd-ryzen-7-260",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -1558,7 +1558,7 @@
     "slug": "apple-m4-pro-12-cores",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m.jpeg"
+      "main": "/images/cpu-apple-m.jpeg"
     },
     "price": null,
     "scores": {
@@ -1643,7 +1643,7 @@
     "slug": "apple-m3-pro",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m.jpeg"
+      "main": "/images/cpu-apple-m.jpeg"
     },
     "price": null,
     "scores": {
@@ -1731,7 +1731,7 @@
     "slug": "apple-m3",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m.jpeg"
+      "main": "/images/cpu-apple-m.jpeg"
     },
     "price": null,
     "scores": {
@@ -1817,7 +1817,7 @@
     "slug": "apple-m1-pro",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m1-pro.jpeg"
+      "main": "/images/cpu-apple-m1-pro.jpeg"
     },
     "price": null,
     "scores": {
@@ -1903,7 +1903,7 @@
     "slug": "apple-m5",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m.jpeg"
+      "main": "/images/cpu-apple-m.jpeg"
     },
     "price": null,
     "scores": {
@@ -1998,7 +1998,7 @@
     "slug": "intel-core-i5-1335u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -2091,7 +2091,7 @@
     "slug": "amd-ryzen-9-9955hx3d",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -2184,7 +2184,7 @@
     "slug": "intel-core-ultra-7-155h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -2277,7 +2277,7 @@
     "slug": "amd-ryzen-7-8845hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -2370,7 +2370,7 @@
     "slug": "apple-m4-8-cores",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m.jpeg"
+      "main": "/images/cpu-apple-m.jpeg"
     },
     "price": null,
     "scores": {
@@ -2457,7 +2457,7 @@
     "slug": "intel-core-i5-1334u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -2550,7 +2550,7 @@
     "slug": "intel-core-i7-1355u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -2642,7 +2642,7 @@
     "slug": "intel-core-7-150u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-generic.jpeg"
+      "main": "/images/cpu-intel-core-generic.jpeg"
     },
     "price": null,
     "scores": {
@@ -2734,7 +2734,7 @@
     "slug": "intel-core-ultra-7-256v",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -2823,7 +2823,7 @@
     "slug": "intel-core-i7-12700h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -2917,7 +2917,7 @@
     "slug": "intel-core-i9-12900h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -3012,7 +3012,7 @@
     "slug": "apple-m2-max",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m2-max.jpeg"
+      "main": "/images/cpu-apple-m2-max.jpeg"
     },
     "price": null,
     "scores": {
@@ -3100,7 +3100,7 @@
     "slug": "intel-core-i7-13650hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -3194,7 +3194,7 @@
     "slug": "intel-core-7-240h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-generic.jpeg"
+      "main": "/images/cpu-intel-core-generic.jpeg"
     },
     "price": null,
     "scores": {
@@ -3288,7 +3288,7 @@
     "slug": "intel-core-ultra-7-255hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -3381,7 +3381,7 @@
     "slug": "intel-core-ultra-5-125h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -3474,7 +3474,7 @@
     "slug": "intel-core-i9-14900k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -3569,7 +3569,7 @@
     "slug": "amd-ryzen-7-7730u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -3657,7 +3657,7 @@
     "slug": "amd-ryzen-5-7530u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -3745,7 +3745,7 @@
     "slug": "intel-core-i5-13420h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -3838,7 +3838,7 @@
     "slug": "intel-core-5-210h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-generic.jpeg"
+      "main": "/images/cpu-intel-core-generic.jpeg"
     },
     "price": null,
     "scores": {
@@ -3931,7 +3931,7 @@
     "slug": "amd-ryzen-9-8940hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -4024,7 +4024,7 @@
     "slug": "amd-ryzen-7-250",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -4114,7 +4114,7 @@
     "slug": "qualcomm-snapdragon-x-elite",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/qualcomm-snapdragon-x-elite.jpeg"
+      "main": "/images/cpu-qualcomm-snapdragon-x-elite.jpeg"
     },
     "price": null,
     "scores": {
@@ -4206,7 +4206,7 @@
     "slug": "intel-core-i7-14650hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -4299,7 +4299,7 @@
     "slug": "qualcomm-snapdragon-x-plus-x1p-42-100",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/qualcomm-snapdragon-x-plus.jpeg"
+      "main": "/images/cpu-qualcomm-snapdragon-x-plus.jpeg"
     },
     "price": null,
     "scores": {
@@ -4391,7 +4391,7 @@
     "slug": "intel-core-i7-13700h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -4486,7 +4486,7 @@
     "slug": "intel-core-i7-13620h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -4579,7 +4579,7 @@
     "slug": "qualcomm-snapdragon-x-plus",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/qualcomm-snapdragon-x-plus.jpeg"
+      "main": "/images/cpu-qualcomm-snapdragon-x-plus.jpeg"
     },
     "price": null,
     "scores": {
@@ -4665,7 +4665,7 @@
     "slug": "intel-core-ultra-5-225h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -4758,7 +4758,7 @@
     "slug": "intel-core-i5-13450hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -4851,7 +4851,7 @@
     "slug": "amd-ryzen-5-7235hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -4944,7 +4944,7 @@
     "slug": "amd-ryzen-ai-max-pro-395",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-generic.jpeg"
+      "main": "/images/cpu-amd-ryzen-generic.jpeg"
     },
     "price": null,
     "scores": {
@@ -5035,7 +5035,7 @@
     "slug": "intel-core-ultra-7-268v",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -5123,7 +5123,7 @@
     "slug": "intel-core-ultra-7-255u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -5214,7 +5214,7 @@
     "slug": "intel-core-ultra-5-225u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -5305,7 +5305,7 @@
     "slug": "amd-ryzen-5-7520u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -5397,7 +5397,7 @@
     "slug": "intel-core-ultra-9-285hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-9.jpeg"
+      "main": "/images/cpu-intel-core-ultra-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -5490,7 +5490,7 @@
     "slug": "intel-core-ultra-9-288v",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-9.jpeg"
+      "main": "/images/cpu-intel-core-ultra-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -5579,7 +5579,7 @@
     "slug": "intel-core-ultra-7-265h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -5672,7 +5672,7 @@
     "slug": "amd-ryzen-ai-9-365",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -5763,7 +5763,7 @@
     "slug": "apple-m3-max",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m.jpeg"
+      "main": "/images/cpu-apple-m.jpeg"
     },
     "price": null,
     "scores": {
@@ -5849,7 +5849,7 @@
     "slug": "intel-core-ultra-7-265kf",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": "302",
     "scores": {
@@ -5941,7 +5941,7 @@
     "slug": "intel-core-ultra-7-265k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": "304",
     "scores": {
@@ -6033,7 +6033,7 @@
     "slug": "intel-core-i3-1315u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": null,
     "scores": {
@@ -6126,7 +6126,7 @@
     "slug": "amd-ryzen-7-8745hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -6214,7 +6214,7 @@
     "slug": "amd-ryzen-7-7840hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -6302,7 +6302,7 @@
     "slug": "amd-ryzen-7-8840hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -6395,7 +6395,7 @@
     "slug": "amd-ryzen-z2-extreme",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-z1.jpeg"
+      "main": "/images/cpu-amd-ryzen-z1.jpeg"
     },
     "price": null,
     "scores": {
@@ -6487,7 +6487,7 @@
     "slug": "amd-ryzen-7-8840u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -6579,7 +6579,7 @@
     "slug": "amd-ryzen-ai-max-395",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-generic.jpeg"
+      "main": "/images/cpu-amd-ryzen-generic.jpeg"
     },
     "price": null,
     "scores": {
@@ -6670,7 +6670,7 @@
     "slug": "amd-ryzen-ai-7-pro-360",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -6760,7 +6760,7 @@
     "slug": "amd-ryzen-z1-extreme",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-z1.jpeg"
+      "main": "/images/cpu-amd-ryzen-z1.jpeg"
     },
     "price": null,
     "scores": {
@@ -6851,7 +6851,7 @@
     "slug": "intel-core-ultra-5-225f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": "162",
     "scores": {
@@ -6944,7 +6944,7 @@
     "slug": "intel-core-i5-14600k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "273",
     "scores": {
@@ -7037,7 +7037,7 @@
     "slug": "amd-ryzen-5-7500f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": "192",
     "scores": {
@@ -7121,7 +7121,7 @@
     "slug": "intel-core-i5-14600kf",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "246",
     "scores": {
@@ -7205,7 +7205,7 @@
     "slug": "intel-core-i5-14400f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "210",
     "scores": {
@@ -7289,7 +7289,7 @@
     "slug": "amd-ryzen-5-9600x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": "202",
     "scores": {
@@ -7382,7 +7382,7 @@
     "slug": "intel-core-ultra-5-225",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": "263",
     "scores": {
@@ -7467,7 +7467,7 @@
     "slug": "qualcomm-snapdragon-x2-elite-extreme-x2e-96-100",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/qualcomm-snapdragon-x-plus.jpeg"
+      "main": "/images/cpu-qualcomm-snapdragon-x-plus.jpeg"
     },
     "price": null,
     "scores": {
@@ -7557,7 +7557,7 @@
     "slug": "intel-core-5-220u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-generic.jpeg"
+      "main": "/images/cpu-intel-core-generic.jpeg"
     },
     "price": null,
     "scores": {
@@ -7646,7 +7646,7 @@
     "slug": "amd-ryzen-5-pro-215",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -7735,7 +7735,7 @@
     "slug": "amd-ryzen-3-210",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-3.jpeg"
+      "main": "/images/cpu-amd-ryzen-3.jpeg"
     },
     "price": null,
     "scores": {
@@ -7826,7 +7826,7 @@
     "slug": "amd-ryzen-5-220",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -7916,7 +7916,7 @@
     "slug": "qualcomm-snapdragon-x-elite-x1e-80-100",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/qualcomm-snapdragon-x-elite.jpeg"
+      "main": "/images/cpu-qualcomm-snapdragon-x-elite.jpeg"
     },
     "price": null,
     "scores": {
@@ -8004,7 +8004,7 @@
     "slug": "apple-m4-max-16-core",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m.jpeg"
+      "main": "/images/cpu-apple-m.jpeg"
     },
     "price": null,
     "scores": {
@@ -8094,7 +8094,7 @@
     "slug": "apple-m4-pro-14-cores",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m.jpeg"
+      "main": "/images/cpu-apple-m.jpeg"
     },
     "price": null,
     "scores": {
@@ -8182,7 +8182,7 @@
     "slug": "amd-ryzen-5-5600f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -8265,7 +8265,7 @@
     "slug": "amd-ryzen-5-7400f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -8344,7 +8344,7 @@
     "slug": "amd-ryzen-5-9500f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -8422,7 +8422,7 @@
     "slug": "amd-ryzen-5-5600",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -8501,7 +8501,7 @@
     "slug": "amd-ryzen-7-5600x3d",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -8580,7 +8580,7 @@
     "slug": "intel-core-ultra-5-235",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -8665,7 +8665,7 @@
     "slug": "intel-core-i5-14600",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -8758,7 +8758,7 @@
     "slug": "amd-ryzen-7-9700f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -8827,7 +8827,7 @@
     "slug": "amd-ryzen-5-8400f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -8906,7 +8906,7 @@
     "slug": "amd-ryzen-7-8700f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": "284",
     "scores": {
@@ -8988,7 +8988,7 @@
     "slug": "amd-ryzen-7-9700x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": "298",
     "scores": {
@@ -9078,7 +9078,7 @@
     "slug": "intel-core-i5-12400f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "164",
     "scores": {
@@ -9159,7 +9159,7 @@
     "slug": "amd-ryzen-7-5700x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": "208",
     "scores": {
@@ -9238,7 +9238,7 @@
     "slug": "amd-ryzen-5-5600x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": "205",
     "scores": {
@@ -9318,7 +9318,7 @@
     "slug": "intel-core-ultra-7-265f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": "369",
     "scores": {
@@ -9410,7 +9410,7 @@
     "slug": "amd-ryzen-7-9800x3d",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": "453",
     "scores": {
@@ -9502,7 +9502,7 @@
     "slug": "intel-core-i7-13700f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "434",
     "scores": {
@@ -9586,7 +9586,7 @@
     "slug": "amd-ryzen-7-7700",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": "304",
     "scores": {
@@ -9680,7 +9680,7 @@
     "slug": "intel-core-i7-14700f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "307",
     "scores": {
@@ -9764,7 +9764,7 @@
     "slug": "intel-core-ultra-7-265",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": "344",
     "scores": {
@@ -9848,7 +9848,7 @@
     "slug": "intel-core-7-250h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-generic.jpeg"
+      "main": "/images/cpu-intel-core-generic.jpeg"
     },
     "price": null,
     "scores": {
@@ -9941,7 +9941,7 @@
     "slug": "intel-core-i5-14500hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -10034,7 +10034,7 @@
     "slug": "intel-core-i5-13500h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -10127,7 +10127,7 @@
     "slug": "intel-core-9-270h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-generic.jpeg"
+      "main": "/images/cpu-intel-core-generic.jpeg"
     },
     "price": null,
     "scores": {
@@ -10220,7 +10220,7 @@
     "slug": "amd-ryzen-9-8945hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -10313,7 +10313,7 @@
     "slug": "amd-ryzen-9-7945hx3d",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -10403,7 +10403,7 @@
     "slug": "amd-ryzen-ai-max-390",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-generic.jpeg"
+      "main": "/images/cpu-amd-ryzen-generic.jpeg"
     },
     "price": null,
     "scores": {
@@ -10491,7 +10491,7 @@
     "slug": "amd-ryzen-9-270",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -10579,7 +10579,7 @@
     "slug": "amd-ryzen-9-7945hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -10668,7 +10668,7 @@
     "slug": "intel-core-i9-14900hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -10762,7 +10762,7 @@
     "slug": "intel-core-i7-14700hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -10856,7 +10856,7 @@
     "slug": "intel-core-5-120f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-generic.jpeg"
+      "main": "/images/cpu-intel-core-generic.jpeg"
     },
     "price": null,
     "scores": {
@@ -10932,7 +10932,7 @@
     "slug": "amd-ryzen-5-4500",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -11008,7 +11008,7 @@
     "slug": "intel-core-i5-13400",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -11097,7 +11097,7 @@
     "slug": "amd-ryzen-5-5500x3d",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": "200",
     "scores": {
@@ -11176,7 +11176,7 @@
     "slug": "intel-core-i5-13400f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "218",
     "scores": {
@@ -11260,7 +11260,7 @@
     "slug": "amd-ryzen-7-5700x3d",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": "334",
     "scores": {
@@ -11337,7 +11337,7 @@
     "slug": "intel-core-i9-13900h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -11430,7 +11430,7 @@
     "slug": "amd-ryzen-ai-max-385",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-generic.jpeg"
+      "main": "/images/cpu-amd-ryzen-generic.jpeg"
     },
     "price": null,
     "scores": {
@@ -11521,7 +11521,7 @@
     "slug": "amd-ryzen-9-7940hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -11609,7 +11609,7 @@
     "slug": "intel-core-ultra-9-285",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-9.jpeg"
+      "main": "/images/cpu-intel-core-ultra-9.jpeg"
     },
     "price": "578",
     "scores": {
@@ -11702,7 +11702,7 @@
     "slug": "amd-ryzen-9-7900",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": "403",
     "scores": {
@@ -11795,7 +11795,7 @@
     "slug": "intel-core-i9-13900",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": "581",
     "scores": {
@@ -11888,7 +11888,7 @@
     "slug": "intel-core-i9-14900",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": "574",
     "scores": {
@@ -11981,7 +11981,7 @@
     "slug": "intel-core-i7-14700",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "403",
     "scores": {
@@ -12074,7 +12074,7 @@
     "slug": "amd-ryzen-5-7600",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": "193",
     "scores": {
@@ -12168,7 +12168,7 @@
     "slug": "intel-core-i5-14500",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "264",
     "scores": {
@@ -12260,7 +12260,7 @@
     "slug": "intel-core-i5-13600",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "323",
     "scores": {
@@ -12353,7 +12353,7 @@
     "slug": "intel-core-i5-14400",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "192",
     "scores": {
@@ -12445,7 +12445,7 @@
     "slug": "intel-core-5-220h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-generic.jpeg"
+      "main": "/images/cpu-intel-core-generic.jpeg"
     },
     "price": null,
     "scores": {
@@ -12537,7 +12537,7 @@
     "slug": "amd-ryzen-5-7535hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -12631,7 +12631,7 @@
     "slug": "amd-ryzen-7-8700g",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -12719,7 +12719,7 @@
     "slug": "amd-ryzen-9-8945hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -12807,7 +12807,7 @@
     "slug": "amd-ryzen-9-6900hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -12896,7 +12896,7 @@
     "slug": "apple-m3-ultra",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m.jpeg"
+      "main": "/images/cpu-apple-m.jpeg"
     },
     "price": null,
     "scores": {
@@ -12981,7 +12981,7 @@
     "slug": "amd-ryzen-9-9950x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -13072,7 +13072,7 @@
     "slug": "apple-m4-ultra",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m.jpeg"
+      "main": "/images/cpu-apple-m.jpeg"
     },
     "price": null,
     "scores": {
@@ -13152,7 +13152,7 @@
     "slug": "apple-m2-ultra",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m2.jpeg"
+      "main": "/images/cpu-apple-m2.jpeg"
     },
     "price": null,
     "scores": {
@@ -13234,7 +13234,7 @@
     "slug": "amd-ryzen-ai-max-pro-380",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-generic.jpeg"
+      "main": "/images/cpu-amd-ryzen-generic.jpeg"
     },
     "price": null,
     "scores": {
@@ -13323,7 +13323,7 @@
     "slug": "intel-core-i9-13900hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -13412,7 +13412,7 @@
     "slug": "intel-core-ultra-7-265hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -13481,7 +13481,7 @@
     "slug": "intel-core-i7-12650h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -13574,7 +13574,7 @@
     "slug": "amd-ryzen-5-8640hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -13667,7 +13667,7 @@
     "slug": "intel-core-i5-14450hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -13760,7 +13760,7 @@
     "slug": "intel-core-i5-12500h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -13852,7 +13852,7 @@
     "slug": "amd-ryzen-5-2600",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": "104",
     "scores": {
@@ -13931,7 +13931,7 @@
     "slug": "amd-ryzen-3-4100",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-3.jpeg"
+      "main": "/images/cpu-amd-ryzen-3.jpeg"
     },
     "price": "73",
     "scores": {
@@ -14009,7 +14009,7 @@
     "slug": "amd-ryzen-5-3600",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": "71",
     "scores": {
@@ -14089,7 +14089,7 @@
     "slug": "amd-ryzen-5-5500",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": "79",
     "scores": {
@@ -14169,7 +14169,7 @@
     "slug": "amd-ryzen-3-3200g",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-3.jpeg"
+      "main": "/images/cpu-amd-ryzen-3.jpeg"
     },
     "price": "70",
     "scores": {
@@ -14258,7 +14258,7 @@
     "slug": "intel-core-i5-9400f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "124",
     "scores": {
@@ -14340,7 +14340,7 @@
     "slug": "amd-ryzen-5-4500u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -14429,7 +14429,7 @@
     "slug": "intel-core-i3-10100f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": "59",
     "scores": {
@@ -14511,7 +14511,7 @@
     "slug": "amd-ryzen-5-1600",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": "104",
     "scores": {
@@ -14590,7 +14590,7 @@
     "slug": "amd-ryzen-3-3100",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-3.jpeg"
+      "main": "/images/cpu-amd-ryzen-3.jpeg"
     },
     "price": "96",
     "scores": {
@@ -14669,7 +14669,7 @@
     "slug": "intel-core-i5-12450h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -14762,7 +14762,7 @@
     "slug": "intel-core-i5-1235u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -14855,7 +14855,7 @@
     "slug": "intel-core-ultra-9-185h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-9.jpeg"
+      "main": "/images/cpu-intel-core-ultra-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -14948,7 +14948,7 @@
     "slug": "amd-ryzen-ai-9-hx-375",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -15039,7 +15039,7 @@
     "slug": "amd-ryzen-9-9900x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -15126,7 +15126,7 @@
     "slug": "amd-ryzen-5-240",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -15218,7 +15218,7 @@
     "slug": "amd-ryzen-5-230",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -15309,7 +15309,7 @@
     "slug": "amd-ryzen-3-7330u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-3.jpeg"
+      "main": "/images/cpu-amd-ryzen-3.jpeg"
     },
     "price": null,
     "scores": {
@@ -15401,7 +15401,7 @@
     "slug": "intel-core-ultra-5-135u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -15494,7 +15494,7 @@
     "slug": "intel-core-ultra-5-228v",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -15586,7 +15586,7 @@
     "slug": "intel-core-ultra-5-238v",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -15670,7 +15670,7 @@
     "slug": "amd-ryzen-5-7640u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -15762,7 +15762,7 @@
     "slug": "amd-ryzen-5-8540u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -15854,7 +15854,7 @@
     "slug": "amd-ryzen-5-8645hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -15942,7 +15942,7 @@
     "slug": "amd-ryzen-5-8640u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -16030,7 +16030,7 @@
     "slug": "intel-core-ultra-7-165u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -16123,7 +16123,7 @@
     "slug": "amd-ryzen-7-7735hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -16211,7 +16211,7 @@
     "slug": "intel-core-ultra-7-265u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -16304,7 +16304,7 @@
     "slug": "amd-ryzen-9-9850hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -16392,7 +16392,7 @@
     "slug": "amd-ryzen-9-9900x3d",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": "553",
     "scores": {
@@ -16483,7 +16483,7 @@
     "slug": "amd-ryzen-9-7900x3d",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": "804",
     "scores": {
@@ -16574,7 +16574,7 @@
     "slug": "amd-ryzen-9-9950x3d",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": "669",
     "scores": {
@@ -16663,7 +16663,7 @@
     "slug": "intel-core-ultra-9-285k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-9.jpeg"
+      "main": "/images/cpu-intel-core-ultra-9.jpeg"
     },
     "price": "504",
     "scores": {
@@ -16757,7 +16757,7 @@
     "slug": "amd-ryzen-7-7800x3d",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": "372",
     "scores": {
@@ -16848,7 +16848,7 @@
     "slug": "amd-ryzen-9-7950x3d",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": "755",
     "scores": {
@@ -16939,7 +16939,7 @@
     "slug": "intel-core-ultra-5-125u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -17032,7 +17032,7 @@
     "slug": "intel-core-ultra-5-235u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -17123,7 +17123,7 @@
     "slug": "intel-core-ultra-7-155u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -17216,7 +17216,7 @@
     "slug": "intel-core-i7-1365u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -17309,7 +17309,7 @@
     "slug": "intel-core-ultra-5-235h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -17402,7 +17402,7 @@
     "slug": "intel-core-ultra-5-135h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -17495,7 +17495,7 @@
     "slug": "intel-core-ultra-7-165h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -17588,7 +17588,7 @@
     "slug": "intel-core-ultra-5-235hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -17675,7 +17675,7 @@
     "slug": "amd-ryzen-5-7645hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -17762,7 +17762,7 @@
     "slug": "amd-ryzen-5-7640hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -17851,7 +17851,7 @@
     "slug": "intel-core-ultra-5-245hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -17936,7 +17936,7 @@
     "slug": "intel-core-ultra-5-245k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -18030,7 +18030,7 @@
     "slug": "intel-core-i7-12650hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -18125,7 +18125,7 @@
     "slug": "intel-core-i5-12600h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -18216,7 +18216,7 @@
     "slug": "intel-core-i7-12800hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -18307,7 +18307,7 @@
     "slug": "intel-core-i5-12450hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -18401,7 +18401,7 @@
     "slug": "amd-ryzen-7-7435hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -18494,7 +18494,7 @@
     "slug": "amd-ryzen-5-5600h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -18581,7 +18581,7 @@
     "slug": "apple-m1-ultra",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m.jpeg"
+      "main": "/images/cpu-apple-m.jpeg"
     },
     "price": null,
     "scores": {
@@ -18662,7 +18662,7 @@
     "slug": "amd-ryzen-7-5800x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": "182",
     "scores": {
@@ -18752,7 +18752,7 @@
     "slug": "apple-m4-max-14-core",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/apple-m.jpeg"
+      "main": "/images/cpu-apple-m.jpeg"
     },
     "price": null,
     "scores": {
@@ -18836,7 +18836,7 @@
     "slug": "intel-core-i9-14900ks",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -18930,7 +18930,7 @@
     "slug": "intel-core-i9-14900kf",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -19023,7 +19023,7 @@
     "slug": "intel-core-i9-13900kf",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": "540",
     "scores": {
@@ -19107,7 +19107,7 @@
     "slug": "intel-core-ultra-5-245kf",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": "194",
     "scores": {
@@ -19191,7 +19191,7 @@
     "slug": "intel-core-i7-14700kf",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "344",
     "scores": {
@@ -19275,7 +19275,7 @@
     "slug": "intel-core-i5-13600k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "534",
     "scores": {
@@ -19369,7 +19369,7 @@
     "slug": "intel-core-i5-13600kf",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "234",
     "scores": {
@@ -19454,7 +19454,7 @@
     "slug": "amd-ryzen-5-7600x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": "182",
     "scores": {
@@ -19548,7 +19548,7 @@
     "slug": "amd-ryzen-7-7700x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": "254",
     "scores": {
@@ -19642,7 +19642,7 @@
     "slug": "intel-core-i7-13700k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "534",
     "scores": {
@@ -19737,7 +19737,7 @@
     "slug": "amd-ryzen-5-8600g",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": "202",
     "scores": {
@@ -19825,7 +19825,7 @@
     "slug": "amd-ryzen-5-8500g",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": "161",
     "scores": {
@@ -19917,7 +19917,7 @@
     "slug": "amd-ryzen-7-5800x3d",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": "614",
     "scores": {
@@ -19996,7 +19996,7 @@
     "slug": "amd-ryzen-9-5900x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": "273",
     "scores": {
@@ -20076,7 +20076,7 @@
     "slug": "intel-core-i7-14700k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "371",
     "scores": {
@@ -20170,7 +20170,7 @@
     "slug": "amd-ryzen-5-7600x3d",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": "479",
     "scores": {
@@ -20265,7 +20265,7 @@
     "slug": "qualcomm-snapdragon-x-elite-x1e-78-100",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/qualcomm-snapdragon-x-elite.jpeg"
+      "main": "/images/cpu-qualcomm-snapdragon-x-elite.jpeg"
     },
     "price": null,
     "scores": {
@@ -20350,7 +20350,7 @@
     "slug": "qualcomm-snapdragon-x-plus-x1p-66-100",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/qualcomm-snapdragon-x-plus.jpeg"
+      "main": "/images/cpu-qualcomm-snapdragon-x-plus.jpeg"
     },
     "price": null,
     "scores": {
@@ -20416,7 +20416,7 @@
     "slug": "qualcomm-snapdragon-x-plus-x1p-46-100",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/qualcomm-snapdragon-x-plus.jpeg"
+      "main": "/images/cpu-qualcomm-snapdragon-x-plus.jpeg"
     },
     "price": null,
     "scores": {
@@ -20487,7 +20487,7 @@
     "slug": "intel-core-3-100u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-generic.jpeg"
+      "main": "/images/cpu-intel-core-generic.jpeg"
     },
     "price": null,
     "scores": {
@@ -20574,7 +20574,7 @@
     "slug": "intel-core-ultra-7-266v",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-7.jpeg"
+      "main": "/images/cpu-intel-core-ultra-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -20663,7 +20663,7 @@
     "slug": "intel-core-ultra-5-236v",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-ultra-5.jpeg"
+      "main": "/images/cpu-intel-core-ultra-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -20736,7 +20736,7 @@
     "slug": "amd-ryzen-5-7430u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -20824,7 +20824,7 @@
     "slug": "amd-ryzen-5-5500u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -20912,7 +20912,7 @@
     "slug": "amd-ryzen-7-5700u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -21000,7 +21000,7 @@
     "slug": "amd-ryzen-z1",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-z1.jpeg"
+      "main": "/images/cpu-amd-ryzen-z1.jpeg"
     },
     "price": null,
     "scores": {
@@ -21089,7 +21089,7 @@
     "slug": "amd-ryzen-7-7840u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -21177,7 +21177,7 @@
     "slug": "intel-core-i9-13980hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -21271,7 +21271,7 @@
     "slug": "amd-ryzen-9-7900x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": "319",
     "scores": {
@@ -21360,7 +21360,7 @@
     "slug": "amd-ryzen-9-7950x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": "749",
     "scores": {
@@ -21450,7 +21450,7 @@
     "slug": "amd-ryzen-7-6800h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -21543,7 +21543,7 @@
     "slug": "intel-processor-n97",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-processor.jpeg"
+      "main": "/images/cpu-intel-processor.jpeg"
     },
     "price": null,
     "scores": {
@@ -21630,7 +21630,7 @@
     "slug": "intel-core-i3-n305",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": null,
     "scores": {
@@ -21717,7 +21717,7 @@
     "slug": "intel-processor-n200",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-processor.jpeg"
+      "main": "/images/cpu-intel-processor.jpeg"
     },
     "price": null,
     "scores": {
@@ -21803,7 +21803,7 @@
     "slug": "intel-processor-n95",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-processor.jpeg"
+      "main": "/images/cpu-intel-processor.jpeg"
     },
     "price": null,
     "scores": {
@@ -21889,7 +21889,7 @@
     "slug": "intel-processor-n100",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-processor.jpeg"
+      "main": "/images/cpu-intel-processor.jpeg"
     },
     "price": null,
     "scores": {
@@ -21974,7 +21974,7 @@
     "slug": "intel-core-i3-1305u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": null,
     "scores": {
@@ -22064,7 +22064,7 @@
     "slug": "intel-core-i7-13700hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -22158,7 +22158,7 @@
     "slug": "amd-ryzen-9-7845hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -22253,7 +22253,7 @@
     "slug": "intel-core-i5-13500hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -22347,7 +22347,7 @@
     "slug": "amd-ryzen-3-8300g",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-3.jpeg"
+      "main": "/images/cpu-amd-ryzen-3.jpeg"
     },
     "price": "176",
     "scores": {
@@ -22441,7 +22441,7 @@
     "slug": "amd-ryzen-5-5600g",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": "194",
     "scores": {
@@ -22533,7 +22533,7 @@
     "slug": "amd-ryzen-3-5300g",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-3.jpeg"
+      "main": "/images/cpu-amd-ryzen-3.jpeg"
     },
     "price": "89",
     "scores": {
@@ -22625,7 +22625,7 @@
     "slug": "amd-ryzen-7-5700g",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": "179",
     "scores": {
@@ -22714,7 +22714,7 @@
     "slug": "intel-core-i7-1360p",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -22807,7 +22807,7 @@
     "slug": "intel-core-i5-1345u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -22897,7 +22897,7 @@
     "slug": "amd-ryzen-7-7745hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -22985,7 +22985,7 @@
     "slug": "amd-ryzen-5-7540u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -23073,7 +23073,7 @@
     "slug": "amd-ryzen-7-7735u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -23158,7 +23158,7 @@
     "slug": "intel-core-i7-11800h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -23252,7 +23252,7 @@
     "slug": "intel-core-i7-1260p",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -23347,7 +23347,7 @@
     "slug": "intel-core-i5-1240p",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -23442,7 +23442,7 @@
     "slug": "intel-core-i7-1370p",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -23537,7 +23537,7 @@
     "slug": "intel-core-i5-1340p",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -23632,7 +23632,7 @@
     "slug": "amd-ryzen-7-5800h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -23724,7 +23724,7 @@
     "slug": "intel-core-i7-1255u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -23818,7 +23818,7 @@
     "slug": "amd-ryzen-7-5825u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -23910,7 +23910,7 @@
     "slug": "amd-ryzen-5-5625u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -24002,7 +24002,7 @@
     "slug": "intel-core-i3-n300",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": null,
     "scores": {
@@ -24092,7 +24092,7 @@
     "slug": "amd-ryzen-3-7440u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-3.jpeg"
+      "main": "/images/cpu-amd-ryzen-3.jpeg"
     },
     "price": null,
     "scores": {
@@ -24182,7 +24182,7 @@
     "slug": "intel-core-i9-13900ks",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": "999",
     "scores": {
@@ -24276,7 +24276,7 @@
     "slug": "intel-core-i9-14900f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": "564",
     "scores": {
@@ -24360,7 +24360,7 @@
     "slug": "intel-core-i9-13900f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": "590",
     "scores": {
@@ -24444,7 +24444,7 @@
     "slug": "intel-core-i7-13700",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "581",
     "scores": {
@@ -24538,7 +24538,7 @@
     "slug": "intel-core-i5-12400",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "234",
     "scores": {
@@ -24631,7 +24631,7 @@
     "slug": "intel-core-i9-12900k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": "314",
     "scores": {
@@ -24724,7 +24724,7 @@
     "slug": "amd-ryzen-7-7800x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": "419",
     "scores": {
@@ -24817,7 +24817,7 @@
     "slug": "intel-core-i9-13900k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": "554",
     "scores": {
@@ -24910,7 +24910,7 @@
     "slug": "intel-core-i3-14100",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": "139",
     "scores": {
@@ -25004,7 +25004,7 @@
     "slug": "intel-core-i5-13500",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "344",
     "scores": {
@@ -25098,7 +25098,7 @@
     "slug": "amd-ryzen-5-6600u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -25187,7 +25187,7 @@
     "slug": "intel-core-i3-13100",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": "143",
     "scores": {
@@ -25276,7 +25276,7 @@
     "slug": "intel-core-i3-14100f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": "117",
     "scores": {
@@ -25364,7 +25364,7 @@
     "slug": "intel-core-i3-12100",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": "141",
     "scores": {
@@ -25453,7 +25453,7 @@
     "slug": "intel-core-i3-13100f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": "171",
     "scores": {
@@ -25532,7 +25532,7 @@
     "slug": "intel-core-i7-12700k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "244",
     "scores": {
@@ -25626,7 +25626,7 @@
     "slug": "intel-core-i5-12600k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "188",
     "scores": {
@@ -25720,7 +25720,7 @@
     "slug": "amd-ryzen-7-6800u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -25806,7 +25806,7 @@
     "slug": "intel-processor-u300",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-processor.jpeg"
+      "main": "/images/cpu-intel-processor.jpeg"
     },
     "price": null,
     "scores": {
@@ -25896,7 +25896,7 @@
     "slug": "amd-ryzen-3-7320u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-3.jpeg"
+      "main": "/images/cpu-amd-ryzen-3.jpeg"
     },
     "price": null,
     "scores": {
@@ -25986,7 +25986,7 @@
     "slug": "intel-core-i3-1215u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": null,
     "scores": {
@@ -26078,7 +26078,7 @@
     "slug": "intel-core-i3-1115g4",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": null,
     "scores": {
@@ -26170,7 +26170,7 @@
     "slug": "amd-ryzen-5-7535u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -26264,7 +26264,7 @@
     "slug": "intel-celeron-processor-n5095",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-celeron.jpeg"
+      "main": "/images/cpu-intel-celeron.jpeg"
     },
     "price": null,
     "scores": {
@@ -26353,7 +26353,7 @@
     "slug": "intel-core-i7-13850hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -26447,7 +26447,7 @@
     "slug": "intel-core-i7-13800h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -26541,7 +26541,7 @@
     "slug": "intel-core-i9-13950hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -26635,7 +26635,7 @@
     "slug": "amd-ryzen-5-6600h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -26723,7 +26723,7 @@
     "slug": "intel-core-i5-1135g7",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -26814,7 +26814,7 @@
     "slug": "intel-core-i9-13905h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -26908,7 +26908,7 @@
     "slug": "amd-ryzen-7-7736u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -27001,7 +27001,7 @@
     "slug": "intel-core-i7-1165g7",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -27091,7 +27091,7 @@
     "slug": "amd-ryzen-5-pro-6650u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -27184,7 +27184,7 @@
     "slug": "intel-core-i5-1245u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -27277,7 +27277,7 @@
     "slug": "intel-core-i7-1185g7",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -27368,7 +27368,7 @@
     "slug": "intel-core-i7-13700kf",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "458",
     "scores": {
@@ -27452,7 +27452,7 @@
     "slug": "intel-core-i5-13600h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -27546,7 +27546,7 @@
     "slug": "intel-core-i5-1350p",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -27639,7 +27639,7 @@
     "slug": "intel-core-i7-12700",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "320",
     "scores": {
@@ -27734,7 +27734,7 @@
     "slug": "intel-core-i5-12600kf",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "174",
     "scores": {
@@ -27818,7 +27818,7 @@
     "slug": "intel-core-i7-12700kf",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "234",
     "scores": {
@@ -27902,7 +27902,7 @@
     "slug": "intel-core-i9-12900kf",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": "329",
     "scores": {
@@ -27996,7 +27996,7 @@
     "slug": "intel-core-i7-12700f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "353",
     "scores": {
@@ -28089,7 +28089,7 @@
     "slug": "intel-core-i5-1230u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -28182,7 +28182,7 @@
     "slug": "intel-core-i7-1250u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -28271,7 +28271,7 @@
     "slug": "intel-core-i3-1005g1",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": null,
     "scores": {
@@ -28356,7 +28356,7 @@
     "slug": "intel-core-i3-1220p",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": null,
     "scores": {
@@ -28449,7 +28449,7 @@
     "slug": "amd-ryzen-7-pro-6850u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -28542,7 +28542,7 @@
     "slug": "intel-core-i9-12900hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -28636,7 +28636,7 @@
     "slug": "intel-core-i9-12900hk",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -28727,7 +28727,7 @@
     "slug": "intel-core-i9-12950hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -28821,7 +28821,7 @@
     "slug": "amd-ryzen-3-5425u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-3.jpeg"
+      "main": "/images/cpu-amd-ryzen-3.jpeg"
     },
     "price": null,
     "scores": {
@@ -28915,7 +28915,7 @@
     "slug": "intel-core-i7-1265u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -29007,7 +29007,7 @@
     "slug": "intel-core-i5-12500",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "210",
     "scores": {
@@ -29101,7 +29101,7 @@
     "slug": "intel-core-i3-12100f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": "102",
     "scores": {
@@ -29181,7 +29181,7 @@
     "slug": "intel-core-i7-1270p",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -29274,7 +29274,7 @@
     "slug": "intel-core-i7-1280p",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -29367,7 +29367,7 @@
     "slug": "amd-ryzen-9-6900hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -29452,7 +29452,7 @@
     "slug": "amd-ryzen-7-6800hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -29537,7 +29537,7 @@
     "slug": "intel-core-i5-10400",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "162",
     "scores": {
@@ -29624,7 +29624,7 @@
     "slug": "intel-core-i7-12800h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -29717,7 +29717,7 @@
     "slug": "intel-core-i5-11320h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -29810,7 +29810,7 @@
     "slug": "intel-pentium-silver-n6000",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-pentium.jpeg"
+      "main": "/images/cpu-intel-pentium.jpeg"
     },
     "price": null,
     "scores": {
@@ -29893,7 +29893,7 @@
     "slug": "intel-celeron-n4500",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-celeron.jpeg"
+      "main": "/images/cpu-intel-celeron.jpeg"
     },
     "price": null,
     "scores": {
@@ -29976,7 +29976,7 @@
     "slug": "intel-core-i5-1155g7",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -30070,7 +30070,7 @@
     "slug": "intel-core-i7-1195g7",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -30163,7 +30163,7 @@
     "slug": "amd-ryzen-threadripper-pro-3955wx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-threadripper.jpeg"
+      "main": "/images/cpu-amd-ryzen-threadripper.jpeg"
     },
     "price": "1104",
     "scores": {
@@ -30253,7 +30253,7 @@
     "slug": "intel-core-i5-11400h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -30342,7 +30342,7 @@
     "slug": "intel-core-i5-11260h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -30431,7 +30431,7 @@
     "slug": "intel-celeron-n5100",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-celeron.jpeg"
+      "main": "/images/cpu-intel-celeron.jpeg"
     },
     "price": null,
     "scores": {
@@ -30518,7 +30518,7 @@
     "slug": "intel-core-i9-11980hk",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -30612,7 +30612,7 @@
     "slug": "intel-core-i3-1125g4",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": null,
     "scores": {
@@ -30705,7 +30705,7 @@
     "slug": "intel-pentium-gold-7505",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-pentium.jpeg"
+      "main": "/images/cpu-intel-pentium.jpeg"
     },
     "price": null,
     "scores": {
@@ -30793,7 +30793,7 @@
     "slug": "intel-core-i5-11400f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "154",
     "scores": {
@@ -30883,7 +30883,7 @@
     "slug": "intel-core-i5-10400f",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "142",
     "scores": {
@@ -30963,7 +30963,7 @@
     "slug": "intel-core-i5-11400",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "223",
     "scores": {
@@ -31055,7 +31055,7 @@
     "slug": "amd-ryzen-7-5800hs",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -31144,7 +31144,7 @@
     "slug": "intel-core-i5-1145g7",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -31238,7 +31238,7 @@
     "slug": "amd-ryzen-3-5300u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-3.jpeg"
+      "main": "/images/cpu-amd-ryzen-3.jpeg"
     },
     "price": null,
     "scores": {
@@ -31322,7 +31322,7 @@
     "slug": "amd-ryzen-5-5600u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -31410,7 +31410,7 @@
     "slug": "intel-core-i9-11900k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": "664",
     "scores": {
@@ -31505,7 +31505,7 @@
     "slug": "intel-core-i7-11700k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "353",
     "scores": {
@@ -31595,7 +31595,7 @@
     "slug": "intel-core-i7-11700",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "429",
     "scores": {
@@ -31690,7 +31690,7 @@
     "slug": "amd-ryzen-9-5900hx",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": null,
     "scores": {
@@ -31782,7 +31782,7 @@
     "slug": "amd-ryzen-7-5800u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -31870,7 +31870,7 @@
     "slug": "amd-ryzen-9-5950x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": "384",
     "scores": {
@@ -31950,7 +31950,7 @@
     "slug": "intel-core-i9-9900k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": "453",
     "scores": {
@@ -32041,7 +32041,7 @@
     "slug": "amd-ryzen-3-4600g",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-3.jpeg"
+      "main": "/images/cpu-amd-ryzen-3.jpeg"
     },
     "price": "520",
     "scores": {
@@ -32130,7 +32130,7 @@
     "slug": "intel-core-i3-10110u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": null,
     "scores": {
@@ -32224,7 +32224,7 @@
     "slug": "intel-core-i5-1035g1",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -32313,7 +32313,7 @@
     "slug": "intel-core-i7-1065g7",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -32406,7 +32406,7 @@
     "slug": "intel-core-i7-8650u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -32494,7 +32494,7 @@
     "slug": "intel-core-i5-8350u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -32582,7 +32582,7 @@
     "slug": "intel-core-i5-8365u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -32671,7 +32671,7 @@
     "slug": "intel-core-i7-10610u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -32757,7 +32757,7 @@
     "slug": "intel-core-i7-8665u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -32846,7 +32846,7 @@
     "slug": "intel-core-i9-10900k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -32940,7 +32940,7 @@
     "slug": "intel-core-i7-10700",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "303",
     "scores": {
@@ -33030,7 +33030,7 @@
     "slug": "amd-ryzen-threadripper-3990x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-threadripper.jpeg"
+      "main": "/images/cpu-amd-ryzen-threadripper.jpeg"
     },
     "price": "2504",
     "scores": {
@@ -33124,7 +33124,7 @@
     "slug": "intel-core-i7-10750h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -33217,7 +33217,7 @@
     "slug": "intel-core-i7-8750h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -33310,7 +33310,7 @@
     "slug": "amd-ryzen-9-3900x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": "354",
     "scores": {
@@ -33389,7 +33389,7 @@
     "slug": "amd-ryzen-7-3800x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": "349",
     "scores": {
@@ -33468,7 +33468,7 @@
     "slug": "amd-ryzen-5-4600h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -33562,7 +33562,7 @@
     "slug": "intel-core-i5-10210u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -33652,7 +33652,7 @@
     "slug": "amd-ryzen-7-4800h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": null,
     "scores": {
@@ -33744,7 +33744,7 @@
     "slug": "amd-ryzen-9-3950x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-9.jpeg"
+      "main": "/images/cpu-amd-ryzen-9.jpeg"
     },
     "price": "724",
     "scores": {
@@ -33833,7 +33833,7 @@
     "slug": "amd-ryzen-5-3500u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": null,
     "scores": {
@@ -33921,7 +33921,7 @@
     "slug": "intel-core-i7-7700k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "144",
     "scores": {
@@ -34010,7 +34010,7 @@
     "slug": "intel-core-i7-6700k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "350",
     "scores": {
@@ -34099,7 +34099,7 @@
     "slug": "amd-ryzen-5-3600x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-5.jpeg"
+      "main": "/images/cpu-amd-ryzen-5.jpeg"
     },
     "price": "104",
     "scores": {
@@ -34178,7 +34178,7 @@
     "slug": "intel-core-i7-10700k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "385",
     "scores": {
@@ -34273,7 +34273,7 @@
     "slug": "amd-ryzen-7-3700x",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/amd-ryzen-7.jpeg"
+      "main": "/images/cpu-amd-ryzen-7.jpeg"
     },
     "price": "204",
     "scores": {
@@ -34367,7 +34367,7 @@
     "slug": "intel-core-i7-8700",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "114",
     "scores": {
@@ -34457,7 +34457,7 @@
     "slug": "intel-core-i7-9700",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "303",
     "scores": {
@@ -34547,7 +34547,7 @@
     "slug": "intel-core-i7-8700k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "134",
     "scores": {
@@ -34638,7 +34638,7 @@
     "slug": "intel-core-i9-9880h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {
@@ -34730,7 +34730,7 @@
     "slug": "intel-core-i7-9750h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": null,
     "scores": {
@@ -34823,7 +34823,7 @@
     "slug": "intel-core-i5-8250u",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -34910,7 +34910,7 @@
     "slug": "intel-core-i5-6500",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "202",
     "scores": {
@@ -34992,7 +34992,7 @@
     "slug": "intel-core-i3-8100",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i3.jpeg"
+      "main": "/images/cpu-intel-core-i3.jpeg"
     },
     "price": "73",
     "scores": {
@@ -35078,7 +35078,7 @@
     "slug": "intel-core-i5-8300h",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": null,
     "scores": {
@@ -35167,7 +35167,7 @@
     "slug": "intel-core-i7-9700k",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "263",
     "scores": {
@@ -35256,7 +35256,7 @@
     "slug": "intel-core-i7-6700",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i7.jpeg"
+      "main": "/images/cpu-intel-core-i7.jpeg"
     },
     "price": "312",
     "scores": {
@@ -35338,7 +35338,7 @@
     "slug": "intel-core-i5-8400",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i5.jpeg"
+      "main": "/images/cpu-intel-core-i5.jpeg"
     },
     "price": "69",
     "scores": {
@@ -35428,7 +35428,7 @@
     "slug": "intel-core-i9-9980hk",
     "type": "cpu",
     "images": {
-      "main": "https://nanoreview.net/common/images/cpu/intel-core-i9.jpeg"
+      "main": "/images/cpu-intel-core-i9.jpeg"
     },
     "price": null,
     "scores": {

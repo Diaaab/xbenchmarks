@@ -199,6 +199,20 @@ function getGPULink(gpuName) {
                             ))
                 }
             </div>
+
+            <div class="brand-links mb-6">
+                <span class="text-muted">Brand: </span>
+                <a
+                    href={`${import.meta.env.BASE_URL}/cpus/${slugify(getBrand(cpu.name))}`}
+                    class="link">{getBrand(cpu.name)}</a
+                >
+                <span class="mx-2">/</span>
+                <span class="text-muted">Series: </span>
+                <a
+                    href={`${import.meta.env.BASE_URL}/cpus/${slugify(getBrand(cpu.name))}/${slugify(getSeries(cpu.name))}`}
+                    class="link">{getSeries(cpu.name)}</a
+                >
+            </div>
         </div>
     </div>
 
