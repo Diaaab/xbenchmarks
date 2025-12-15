@@ -37,10 +37,13 @@ const { advantages1, advantages2 } = calculateAdvantages(item1, item2);
 
 const item1WithAdvantages = { ...item1, advantages: advantages1 };
 const item2WithAdvantages = { ...item2, advantages: advantages2 };
+
+const relatedComparisons = getComparisons(laptops, 10);
 ---
 
 <ComparisonLayout
   item1={item1WithAdvantages}
   item2={item2WithAdvantages}
   title=`${item1.name} vs ${item2.name} - Laptop Comparison`
+  relatedComparisons={relatedComparisons}
 />

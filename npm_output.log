@@ -2,14 +2,14 @@
 > electrical-escape@0.0.1 dev
 > astro dev
 
-22:55:19 [types] Generated 1ms
-22:55:19 [content] Syncing content
-22:55:19 [content] Synced content
+17:18:17 [types] Generated 1ms
+17:18:17 [content] Syncing content
+17:18:18 [content] Synced content
 
- astro  v5.16.5 ready in 498 ms
+ astro  v5.16.5 ready in 620 ms
 
 ┃ Local    http://localhost:4321/xbenchmarks/
 ┃ Network  use --host to expose
 
-22:55:19 watching for file changes...
-22:55:31 [200] /compare/cpu 40ms
+17:18:18 watching for file changes...
+17:18:37 [200] /compare/laptop/apple-macbook-air-m1-2020-vs-apple-macbook-air-13-m4-2025 75ms
