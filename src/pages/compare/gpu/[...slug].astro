@@ -1,0 +1,46 @@
+---
+import ComparisonLayout from "../../../layouts/ComparisonLayout.astro";
+import gpus from "../../../data/gpus.json";
+import { getComparisons } from "../../../utils/getComparisons.js";
+
+export async function getStaticPaths() {
+	const comparisons = getComparisons(gpus, 500);
+	const paths = comparisons.map((comparison) => ({
+		params: { slug: `${comparison[0].slug}-vs-${comparison[1].slug}` },
+		props: { item1: comparison[0], item2: comparison[1] },
+	}));
+	return paths;
+}
+
+const { item1, item2 } = Astro.props;
+
+function calculateAdvantages(item1, item2) {
+  const advantages1 = [];
+  const advantages2 = [];
+
+  if (item1.memory > item2.memory) {
+    advantages1.push({ type: 'positive', text: 'More VRAM' });
+  } else if (item2.memory > item1.memory) {
+    advantages2.push({ type: 'positive', text: 'More VRAM' });
+  }
+
+  if (item1.core_clock > item2.core_clock) {
+    advantages1.push({ type: 'positive', text: 'Higher core clock' });
+  } else if (item2.core_clock > item1.core_clock) {
+    advantages2.push({ type: 'positive', text: 'Higher core clock' });
+  }
+
+  return { advantages1, advantages2 };
+}
+
+const { advantages1, advantages2 } = calculateAdvantages(item1, item2);
+
+const item1WithAdvantages = { ...item1, advantages: advantages1 };
+const item2WithAdvantages = { ...item2, advantages: advantages2 };
+---
+
+<ComparisonLayout
+  item1={item1WithAdvantages}
+  item2={item2WithAdvantages}
+  title=`${item1.name} vs ${item2.name} - GPU Comparison`
+/>

@@ -1,0 +1,49 @@
+---
+import ComparisonLayout from "../../../layouts/ComparisonLayout.astro";
+import laptops from "../../../data/laptops.json";
+import { getComparisons } from "../../../utils/getComparisons.js";
+
+export async function getStaticPaths() {
+	const comparisons = getComparisons(laptops, 500);
+	const paths = comparisons.map((comparison) => ({
+		params: { slug: `${comparison[0].slug}-vs-${comparison[1].slug}` },
+		props: { item1: comparison[0], item2: comparison[1] },
+	}));
+	return paths;
+}
+
+const { item1, item2 } = Astro.props;
+
+function calculateAdvantages(item1, item2) {
+  const advantages1 = [];
+  const advantages2 = [];
+
+  if (item1.ram > item2.ram) {
+    advantages1.push({ type: 'positive', text: 'More RAM' });
+  } else if (item2.ram > item1.ram) {
+    advantages2.push({ type: 'positive', text: 'More RAM' });
+  }
+
+  if (item1.storage > item2.storage) {
+    advantages1.push({ type: 'positive', text: 'More storage' });
+  } else if (item2.storage > item1.storage) {
+    advantages2.push({ type: 'positive', text: 'More storage' });
+  }
+
+  return { advantages1, advantages2 };
+}
+
+const { advantages1, advantages2 } = calculateAdvantages(item1, item2);
+
+const item1WithAdvantages = { ...item1, advantages: advantages1 };
+const item2WithAdvantages = { ...item2, advantages: advantages2 };
+
+const relatedComparisons = getComparisons(laptops, 10);
+---
+
+<ComparisonLayout
+  item1={item1WithAdvantages}
+  item2={item2WithAdvantages}
+  title=`${item1.name} vs ${item2.name} - Laptop Comparison`
+  relatedComparisons={relatedComparisons}
+/>

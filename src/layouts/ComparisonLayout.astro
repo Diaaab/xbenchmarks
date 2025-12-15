@@ -1,0 +1,518 @@
+---
+import Layout from "./Layout.astro";
+import cpus from "../data/cpus.json";
+import gpus from "../data/gpus.json";
+
+const { item1, item2, title, relatedComparisons } = Astro.props;
+
+function getAdvantageClass(advantage) {
+	if (advantage.type === "positive") return "advantage-positive";
+	if (advantage.type === "negative") return "advantage-negative";
+	return "";
+}
+
+function findCpuSlug(name) {
+	const cpu = cpus.find((c) => name.includes(c.name));
+	return cpu ? cpu.slug : null;
+}
+
+function findGpuSlug(name) {
+	const gpu = gpus.find((g) => name.includes(g.name));
+	return gpu ? gpu.slug : null;
+}
+
+function renderSpec(key, value) {
+	if (!value) return "-";
+	if (key === "CPU") {
+		const slug = findCpuSlug(value);
+		if (slug) {
+			return `<a href="${import.meta.env.BASE_URL}/cpus/${slug}">${value}</a>`;
+		}
+	}
+	if (key === "GPU") {
+		const slug = findGpuSlug(value);
+		if (slug) {
+			return `<a href="${import.meta.env.BASE_URL}/gpus/${slug}">${value}</a>`;
+		}
+	}
+	return value;
+}
+
+function getWinnerClass(key, value1, value2) {
+  if (!value1 || !value2) return '';
+  const num1 = parseFloat(String(value1).replace(/[^0-9.-]+/g,""));
+  const num2 = parseFloat(String(value2).replace(/[^0-9.-]+/g,""));
+
+  if (isNaN(num1) || isNaN(num2)) return '';
+
+  if (key === 'Weight' || key === 'Noise level (max. load)' || key === 'Response time' || key === 'Full charging time') {
+    if (num1 < num2) return 'winner';
+    if (num2 < num1) return 'loser';
+  } else {
+    if (num1 > num2) return 'winner';
+    if (num2 > num1) return 'loser';
+  }
+  return '';
+}
+
+const specSections = {
+	Performance: [
+		"CPU",
+		"GPU",
+		"RAM",
+		"Storage",
+		"Base frequency",
+		"Turbo frequency",
+		"Cores",
+		"Threads",
+		"L3 Cache",
+		"Integrated GPU",
+		"Fabrication process",
+		"TGP",
+		"GPU base clock",
+		"GPU boost clock",
+		"FLOPS",
+		"Memory size",
+		"Memory type",
+		"Memory bus",
+		"Memory speed",
+		"Shading units (cores)",
+		"Texture mapping units (TMUs)",
+		"Raster operations pipelines (ROPs)",
+	],
+	Display: [
+		"Display",
+		"Size",
+		"Type",
+		"Refresh rate",
+		"Adaptive refresh rate",
+		"PPI",
+		"Aspect ratio",
+		"Resolution",
+		"HDR support",
+		"Sync technology",
+		"Touchscreen",
+		"Coating",
+		"Ambient light sensor",
+		"Contrast",
+		"sRGB color space",
+		"Adobe RGB profile",
+		"DCI-P3 color gamut",
+		"Response time",
+	],
+	Battery: [
+		"Full charging time",
+		"Battery type",
+		"Replaceable",
+		"Fast charging",
+		"Charging via USB (Power Delivery)",
+		"Charging port position",
+		"Charge power",
+		"Weight of AC adapter",
+		"Voltage",
+	],
+	Design: [
+		"Weight",
+		"Dimensions",
+		"Area",
+		"Screen-to-body ratio",
+		"Side bezels",
+		"Colors",
+		"Material",
+		"Transformer",
+		"Opening angle",
+	],
+	Cooling: [
+		"Cooling system",
+		"Vapor chamber",
+		"Liquid metal",
+		"Number of fans",
+		"Noise level (max. load)",
+	],
+	"Storage Details": [
+		"Channels",
+		"Clock",
+		"Upgradable",
+		"Total slots",
+		"Max. ram size",
+		"Bus",
+		"Storage type",
+		"NVMe",
+	],
+	Audio: [
+		"Audio chip",
+		"Speakers",
+		"Power",
+		"Dolby Atmos",
+		"Loudness",
+		"Microphones",
+	],
+	Connectivity: [
+		"Wi-Fi standard",
+		"Bluetooth",
+		"Fingerprint",
+		"Infrared sensor",
+		"Optical drive",
+		"Webcam",
+		"Webcam resolution",
+	],
+	Ports: [
+		"USB-A",
+		"USB Type-C",
+		"Thunderbolt",
+		"HDMI",
+		"DisplayPort",
+		"VGA",
+		"Audio jack (3.5 mm)",
+		"Ethernet (RJ45)",
+		"SD card reader",
+		"Proprietary charging port",
+	],
+	Input: [
+		"Keyboard type",
+		"Numpad",
+		"Backlight",
+		"Key travel",
+		"Surface",
+		"Windows Precision",
+	],
+};
+
+const allSpecKeys = [
+	...new Set([
+		...Object.keys(item1.specs),
+		...Object.keys(item2.specs),
+	]),
+];
+
+const groupedSpecs = {};
+const assignedKeys = new Set();
+
+for (const section in specSections) {
+	groupedSpecs[section] = [];
+	for (const key of specSections[section]) {
+		if (allSpecKeys.includes(key)) {
+			groupedSpecs[section].push(key);
+			assignedKeys.add(key);
+		}
+	}
+}
+
+groupedSpecs["Other"] = allSpecKeys.filter((key) => !assignedKeys.has(key));
+
+// Filter out empty sections
+for (const section in groupedSpecs) {
+	if (groupedSpecs[section].length === 0) {
+		delete groupedSpecs[section];
+	}
+}
+---
+
+<Layout {title}>
+	<div class="card">
+		<div class="card-block">
+			<div class="compare-head">
+				<div class="compare-head-item">
+					<a href={`${import.meta.env.BASE_URL}/laptops/${item1.slug}`}>
+						<img
+							src={`${import.meta.env.BASE_URL}${item1.images.main}`}
+							alt={item1.name}
+							class="compare-image"
+						/>
+						<div class="mt" id="first-phone">{item1.name}</div>
+					</a>
+				</div>
+				<div class="compare-head-vs">VS</div>
+				<div class="compare-head-item">
+					<a href={`${import.meta.env.BASE_URL}/laptops/${item2.slug}`}>
+						<img
+							src={`${import.meta.env.BASE_URL}${item2.images.main}`}
+							alt={item2.name}
+							class="compare-image"
+						/>
+						<div class="mt" id="second-phone">{item2.name}</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-block bb-light pb flex flex-wrap">
+			<div class="card-head">
+				<h2 id="diff" class="title-h2">Key Differences</h2>
+			</div>
+		</div>
+		<div class="card-block">
+			<div class="key-differences">
+				<div class="advantages">
+					<div class="title-h4">Advantages of {item1.name}</div>
+					<ul class="proscons-list">
+						{
+							item1.advantages.map((adv) => (
+								<li class={getAdvantageClass(adv)}>
+									<span class="icn-plus-css"></span>
+									{adv.text}
+								</li>
+							))
+						}
+					</ul>
+				</div>
+				<div class="advantages">
+					<div class="title-h4">Advantages of {item2.name}</div>
+					<ul class="proscons-list">
+						{
+							item2.advantages.map((adv) => (
+								<li class={getAdvantageClass(adv)}>
+									<span class="icn-plus-css"></span>
+									{adv.text}
+								</li>
+							))
+						}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-block bb-light pb flex flex-wrap">
+			<div class="card-head">
+				<h2 id="specs" class="title-h2">Specifications</h2>
+			</div>
+		</div>
+		{
+			Object.keys(groupedSpecs).map((section) => (
+				<div class="spec-section">
+					<h3 class="spec-section-title">{section}</h3>
+					<table class="specs-table specs-table-compare">
+						<tbody>
+              {groupedSpecs[section].map((key) => {
+                const winnerClass1 = getWinnerClass(key, item1.specs[key], item2.specs[key]);
+                const winnerClass2 = getWinnerClass(key, item2.specs[key], item1.specs[key]);
+                return (
+                  <tr>
+                    <td class="cell-h">{key}</td>
+                    <td
+                      class:list={["cell-s1", winnerClass1]}
+                      data-label={item1.name}
+                      set:html={renderSpec(key, item1.specs[key])}
+                    />
+                    <td
+                      class:list={["cell-s2", winnerClass2]}
+                      data-label={item2.name}
+                      set:html={renderSpec(key, item2.specs[key])}
+                    />
+                  </tr>
+                );
+              })}
+						</tbody>
+					</table>
+				</div>
+			))
+		}
+	</div>
+
+	{
+		relatedComparisons && (
+			<div class="card">
+				<div class="card-block bb-light pb flex flex-wrap">
+					<div class="card-head">
+						<h2 id="related" class="title-h2">
+							Related Comparisons
+						</h2>
+					</div>
+				</div>
+				<div class="card-block">
+					<ul class="related-comparisons-list">
+						{relatedComparisons.map((comp) => (
+							<li>
+								<a
+									href={`${import.meta.env.BASE_URL}/compare/laptop/${comp[0]
+										.slug}-vs-${comp[1].slug}`}
+								>
+									{comp[0].name} vs {comp[1].name}
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
+			</div>
+		)
+	}
+</Layout>
+
+<style>
+	.card {
+		border: 1px solid #e0e0e0;
+		border-radius: 4px;
+		margin-bottom: 1rem;
+	}
+	.card-block {
+		padding: 1rem;
+	}
+  .bb-light {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .pb {
+    padding-bottom: 1rem;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .compare-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .compare-head-item {
+    flex: 1;
+  }
+  .compare-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+  }
+  .compare-head-vs {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 1rem;
+  }
+  .title-h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .key-differences {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .title-h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .proscons-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .proscons-list li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .icn-plus-css {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5rem;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 50%;
+  }
+  .icn-plus-css::before {
+    content: '+';
+  }
+  .specs-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .specs-table th, .specs-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+  }
+  .cell-h {
+    font-weight: 600;
+  }
+  .cell-s1, .cell-s2 {
+    text-align: center;
+  }
+  .winner {
+    background-color: #e8f5e9; /* Light green */
+  }
+  .spec-section {
+    margin-bottom: 2rem;
+  }
+  .spec-section-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .related-comparisons-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .related-comparisons-list li {
+    margin-bottom: 0.5rem;
+  }
+  .related-comparisons-list a {
+    text-decoration: none;
+    color: #333;
+  }
+  .related-comparisons-list a:hover {
+    text-decoration: underline;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .compare-head {
+      flex-direction: column;
+    }
+    .compare-head-vs {
+      margin: 1rem 0;
+    }
+    .key-differences {
+      grid-template-columns: 1fr;
+    }
+    .specs-table, .specs-table tbody, .specs-table tr, .specs-table td {
+      display: block;
+      width: 100%;
+    }
+    .specs-table thead {
+      display: none;
+    }
+    .specs-table tr {
+      margin-bottom: 1rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .specs-table td {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.75rem;
+      text-align: right;
+    }
+    .specs-table td.cell-h {
+      display: block;
+      background-color: #f5f5f5;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .specs-table td:not(.cell-h) {
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .specs-table tr td:last-child {
+      border-bottom: none;
+    }
+    .specs-table td:not(.cell-h)::before {
+      content: attr(data-label);
+      font-weight: bold;
+      text-align: left;
+      margin-right: 1rem;
+    }
+  }
+</style>
